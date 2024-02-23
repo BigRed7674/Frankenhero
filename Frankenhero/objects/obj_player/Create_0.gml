@@ -5,10 +5,10 @@ xspeed = 0;
 yspeed= 0;
 
 //Sprite Control
-centerYOffset = -5;
+centerYOffset = -3;
 centerY = y+centerYOffset;
 
-
+weaponOffsetDist = 4;
 aimDir = 0;
 
 

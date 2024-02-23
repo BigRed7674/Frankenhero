@@ -19,6 +19,7 @@
     {"name":"Wall_Sprites","order":10,"path":"folders/Sprites/Wall_Sprites.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"flashLight_sprite","order":4,"path":"sprites/flashLight_sprite/flashLight_sprite.yy",},
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"playerRight_sprite","order":2,"path":"sprites/playerRight_sprite/playerRight_sprite.yy",},
     {"name":"obj_solidWall","order":2,"path":"objects/obj_solidWall/obj_solidWall.yy",},

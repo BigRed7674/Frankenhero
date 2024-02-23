@@ -37,6 +37,8 @@
   },
   "resources": [
     {"id":{"name":"playerDown_sprite","path":"sprites/playerDown_sprite/playerDown_sprite.yy",},},
+    {"id":{"name":"custom_scripts","path":"scripts/custom_scripts/custom_scripts.yy",},},
+    {"id":{"name":"flashLight_sprite","path":"sprites/flashLight_sprite/flashLight_sprite.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"playerRight_sprite","path":"sprites/playerRight_sprite/playerRight_sprite.yy",},},
     {"id":{"name":"obj_solidWall","path":"objects/obj_solidWall/obj_solidWall.yy",},},
