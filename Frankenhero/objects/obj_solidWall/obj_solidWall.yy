@@ -1,18 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "obj_solidWall",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_wall",
+    "path": "objects/obj_wall/obj_wall.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,12 +29,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "playerDown_sprite",
-    "path": "sprites/playerDown_sprite/playerDown_sprite.yy",
+    "name": "solidWall_sprite",
+    "path": "sprites/solidWall_sprite/solidWall_sprite.yy",
   },
-  "spriteMaskId": {
-    "name": "playerDown_sprite",
-    "path": "sprites/playerDown_sprite/playerDown_sprite.yy",
-  },
+  "spriteMaskId": null,
   "visible": true,
 }

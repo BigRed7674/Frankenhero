@@ -15,10 +15,17 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Player_Sprites","order":9,"path":"folders/Sprites/Player_Sprites.yy",},
+    {"name":"Wall_Sprites","order":10,"path":"folders/Sprites/Wall_Sprites.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
+    {"name":"playerRight_sprite","order":2,"path":"sprites/playerRight_sprite/playerRight_sprite.yy",},
+    {"name":"obj_solidWall","order":2,"path":"objects/obj_solidWall/obj_solidWall.yy",},
+    {"name":"wall_sprite","order":1,"path":"sprites/wall_sprite/wall_sprite.yy",},
     {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
-    {"name":"player_sprite","order":1,"path":"sprites/player_sprite/player_sprite.yy",},
+    {"name":"playerLeft_sprite","order":1,"path":"sprites/playerLeft_sprite/playerLeft_sprite.yy",},
     {"name":"Sprite2","order":2,"path":"sprites/Sprite2/Sprite2.yy",},
+    {"name":"playerUp_sprite","order":3,"path":"sprites/playerUp_sprite/playerUp_sprite.yy",},
   ],
 }
