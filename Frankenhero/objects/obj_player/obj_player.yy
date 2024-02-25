@@ -30,12 +30,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "playerDown_sprite",
-    "path": "sprites/playerDown_sprite/playerDown_sprite.yy",
+    "name": "spr_playerDown",
+    "path": "sprites/spr_playerDown/spr_playerDown.yy",
   },
   "spriteMaskId": {
-    "name": "playerDown_sprite",
-    "path": "sprites/playerDown_sprite/playerDown_sprite.yy",
+    "name": "spr_playerDown",
+    "path": "sprites/spr_playerDown/spr_playerDown.yy",
   },
   "visible": true,
 }

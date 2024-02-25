@@ -3,6 +3,7 @@ rightKey = keyboard_check( ord("D") );
 leftKey = keyboard_check(ord("A"));
 upKey = keyboard_check(ord("W"));
 downKey = keyboard_check(ord("S"));
+shootKey = mouse_check_button( mb_left )
 
 
 
@@ -37,16 +38,13 @@ downKey = keyboard_check(ord("S"));
 	y+=yspeed;
 #endregion
 
-//player aiming
-	centerY = y + centerYOffset;
-	
-	//aim
-	aimDir = point_direction(x, centerY, mouse_x, mouse_y);
-
-
 
 //sprite control
 #region
+	//player aiming
+	centerY = y + centerYOffset;
+	//aim
+	aimDir = point_direction(x, centerY, mouse_x, mouse_y);
 	//set correct direction player is facing
 	face = round(aimDir/90); 
 	if face == 4 { face = 0; };
@@ -60,4 +58,24 @@ downKey = keyboard_check(ord("S"));
 	//set player sprites
 	mask_index = sprite[3];
 	sprite_index = sprite[face];
+#endregion
+// shoot the weapon
+#region
+if shootTimer > 0 { shootTimer -- }
+if shootKey && shootTimer <= 0
+{
+	// reset the timer
+	shootTimer = shootCooldown
+	
+	// create the bullet
+	var _xOffset = lengthdir_x( weaponLength + weaponOffsetDist, aimDir )
+	var _yOffset = lengthdir_y( weaponLength + weaponOffsetDist, aimDir )
+	var _bulletInst = instance_create_depth( x + _xOffset , centerY + _yOffset , depth-100 , bulletObj )
+	
+	// change the direction
+	with( _bulletInst )
+	{
+		dir = other.aimDir
+	}
+}
 #endregion

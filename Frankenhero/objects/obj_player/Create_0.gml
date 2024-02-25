@@ -14,14 +14,14 @@ aimDir = 0;
 
 
 face = 3;
-sprite[0] = playerRight_sprite; //0 on xy Plane
-sprite[1] = playerUp_sprite; //90 on XY Plane
-sprite[2] = playerLeft_sprite; // 180 on XY Plane
-sprite[3] = playerDown_sprite; // 270 on XY Plane
+sprite[0] = spr_playerRight; //0 on xy Plane
+sprite[1] = spr_playerUp; //90 on XY Plane
+sprite[2] = spr_playerLeft; // 180 on XY Plane
+sprite[3] = spr_playerDown; // 270 on XY Plane
 
-sprite_index = sprite[face];
+// weapon info
+shootTimer = 0
+shootCooldown = 9
 
-
-
-
-
+bulletObj = obj_bullet
+weaponLength = sprite_get_bbox_right( spr_flashlight ) - sprite_get_xoffset( spr_flashlight )
