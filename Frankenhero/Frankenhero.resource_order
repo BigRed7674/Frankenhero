@@ -17,6 +17,7 @@
     {"name":"Wall_Sprites","order":10,"path":"folders/Sprites/Wall_Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Enemy_Sprites","order":12,"path":"folders/Sprites/Enemy_Sprites.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_enemySheep","order":7,"path":"objects/obj_enemySheep/obj_enemySheep.yy",},
@@ -28,12 +29,14 @@
     {"name":"spr_playerRight","order":2,"path":"sprites/spr_playerRight/spr_playerRight.yy",},
     {"name":"obj_wallSolid","order":2,"path":"objects/obj_wallSolid/obj_wallSolid.yy",},
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
+    {"name":"obj_damagePlayer","order":8,"path":"objects/obj_damagePlayer/obj_damagePlayer.yy",},
     {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
     {"name":"spr_playerLeft","order":1,"path":"sprites/spr_playerLeft/spr_playerLeft.yy",},
-    {"name":"spr_enemySheepBlack","order":11,"path":"sprites/spr_enemySheepBlack/spr_enemySheepBlack.yy",},
     {"name":"spr_bullet","order":5,"path":"sprites/spr_bullet/spr_bullet.yy",},
+    {"name":"obj_bulletEnemy","order":9,"path":"objects/obj_bulletEnemy/obj_bulletEnemy.yy",},
     {"name":"Sprite2","order":2,"path":"sprites/Sprite2/Sprite2.yy",},
     {"name":"obj_damageParent","order":6,"path":"objects/obj_damageParent/obj_damageParent.yy",},
+    {"name":"spr_bulletEnemy","order":1,"path":"sprites/spr_bulletEnemy/spr_bulletEnemy.yy",},
     {"name":"spr_playerUp","order":3,"path":"sprites/spr_playerUp/spr_playerUp.yy",},
   ],
 }
