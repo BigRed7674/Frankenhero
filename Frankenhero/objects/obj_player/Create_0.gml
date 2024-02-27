@@ -8,7 +8,7 @@ yspeed= 0;
 centerYOffset = -3;
 centerY = y+centerYOffset;
 
-weaponOffsetDist = 4;
+weaponOffsetDist = 20;
 aimDir = 0;
 
 
