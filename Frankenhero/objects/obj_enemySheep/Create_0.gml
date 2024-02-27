@@ -18,4 +18,4 @@ windupTime = 60
 recoverTime = 45
 bulletInst = noone
 bulletXoffset = 5
-bulletYoffset = -8
+bulletYoffset = -38
