@@ -46,8 +46,10 @@ shootKey = mouse_check_button( mb_left )
 	//aim
 	aimDir = point_direction(x, centerY, mouse_x, mouse_y);
 	//set correct direction player is facing
-	face = round(aimDir/90); 
-	if face == 4 { face = 0; };
+	//face = round(aimDir/90); 
+	//if face == 4 { face = 0; };
+	// for now face is always 3
+	face = 3
 
 	// animate sprite (will be necessary for actual art assets)
 	if xspeed == 0 && yspeed == 0
