@@ -14,7 +14,7 @@ function draw_flashlight()
 		_weaponYscl = -1;
 	}
 
-	draw_sprite_ext(weapon.sprite, 0, x + _xOffset, centerY + _yOffset, 1, _weaponYscl, aimDir, image_blend, image_alpha );
+	draw_sprite_ext(weapon.sprite, 0, x + _xOffset, y_center + _yOffset, 1, _weaponYscl, aimDir, image_blend, image_alpha );
 
 
 }

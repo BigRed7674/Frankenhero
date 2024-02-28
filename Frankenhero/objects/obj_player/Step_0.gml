@@ -43,9 +43,9 @@ var _swap_key_pressed = mouse_check_button_pressed( mb_right )
 //sprite control
 #region
 	//player aiming
-	centerY = y + centerYOffset;
+	y_center = y + centerYOffset;
 	//aim
-	aimDir = point_direction(x, centerY, mouse_x, mouse_y);
+	aimDir = point_direction(x, y_center, mouse_x, mouse_y);
 	//set correct direction player is facing
 	/*face = round(aimDir/90); 
 	if face == 4 { face = 0; };
@@ -95,7 +95,7 @@ if shootKey && shootTimer <= 0
 	// create the correct number of bullets
 	for ( var _num = 0 ; _num < weapon.bullet_num ; _num++ )
 	{
-		var _bullet_instance = instance_create_depth( x + _xOffset , centerY + _yOffset , depth-100 , weapon.bullet_object )
+		var _bullet_instance = instance_create_depth( x + _xOffset , y_center + _yOffset , depth-100 , weapon.bullet_object )
 	
 		// change the direction
 		with( _bullet_instance )

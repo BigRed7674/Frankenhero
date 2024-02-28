@@ -6,7 +6,7 @@ yspeed= 0;
 
 //Sprite Control
 centerYOffset = -30;
-centerY = y+centerYOffset;
+y_center = y+centerYOffset;
 
 aimDir = 0;
 
