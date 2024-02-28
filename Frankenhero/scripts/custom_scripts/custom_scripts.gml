@@ -3,8 +3,8 @@ function draw_flashlight()
 {
 	//Draw Flashlight
 	//get weapon off the player's body
-	var _xOffset = lengthdir_x(weaponOffsetDist, aimDir);
-	var _yOffset = lengthdir_y(weaponOffsetDist, aimDir);
+	var _xOffset = lengthdir_x(weapon.offset_distance, aimDir);
+	var _yOffset = lengthdir_y(weapon.offset_distance, aimDir);
 
 
 	// flip the flashlight

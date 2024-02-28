@@ -8,7 +8,6 @@ yspeed= 0;
 centerYOffset = -30;
 centerY = y+centerYOffset;
 
-weaponOffsetDist = 20;
 aimDir = 0;
 
 
@@ -22,12 +21,9 @@ playerSprite[3] = spr_playerDown; // 270 on XY Plane
 // weapon info
 shootTimer = 0
 
-flashlight =
-{
-	sprite : spr_flashlight,
-	length : sprite_get_bbox_right( spr_flashlight ) - sprite_get_xoffset( spr_flashlight ),
-	bulletObj : obj_bullet,
-	cooldown : 9
-}
+// add weapons to player weapon inventory
+array_push( global.player_weapon_inventory , global.weapon_list.flashlight )
+array_push( global.player_weapon_inventory , global.weapon_list.test )
 
-weapon = flashlight
+selected_weapon = 0
+weapon = global.player_weapon_inventory[selected_weapon]

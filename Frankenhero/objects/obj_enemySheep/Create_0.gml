@@ -1,6 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
+hp = 100
+
 spd = 0
 chase_spd = 0.5
 dir = 0

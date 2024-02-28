@@ -20,3 +20,4 @@ if place_meeting(x + xspd, y , obj_wallSolid) { destroy = true }
 if point_distance( xstart, ystart, x, y ) > maxDist { destroy = true }
 
 #endregion
+

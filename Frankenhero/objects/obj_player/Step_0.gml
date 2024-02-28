@@ -5,6 +5,8 @@ upKey = keyboard_check(ord("W"));
 downKey = keyboard_check(ord("S"));
 shootKey = mouse_check_button( mb_left )
 
+// for ability testing, comment _swap_key_pressed for submission
+var _swap_key_pressed = mouse_check_button_pressed( mb_right )
 
 
 //player movement
@@ -38,7 +40,6 @@ shootKey = mouse_check_button( mb_left )
 	y+=yspeed;
 #endregion
 
-
 //sprite control
 #region
 	//player aiming
@@ -46,9 +47,9 @@ shootKey = mouse_check_button( mb_left )
 	//aim
 	aimDir = point_direction(x, centerY, mouse_x, mouse_y);
 	//set correct direction player is facing
-	//face = round(aimDir/90); 
-	//if face == 4 { face = 0; };
-	// for now, face is always 3 from the create event
+	/*face = round(aimDir/90); 
+	if face == 4 { face = 0; };
+	face is always 3 from the create event */
 
 	// animate sprite (will be necessary for actual art assets)
 	if xspeed == 0 && yspeed == 0
@@ -60,6 +61,21 @@ shootKey = mouse_check_button( mb_left )
 	mask_index = playerSprite[3];
 	sprite_index = playerSprite[face];
 #endregion
+
+// weapon swapping
+#region
+var _player_weapon_inventory = global.player_weapon_inventory
+// cycle through weapons
+if _swap_key_pressed
+{
+	// change the selection and wrap around
+	selected_weapon++
+	if selected_weapon >= array_length( _player_weapon_inventory ) { selected_weapon = 0 }
+	// set the new weapon
+	weapon = _player_weapon_inventory[selected_weapon]
+}
+#endregion
+
 // shoot the weapon
 #region
 if shootTimer > 0 { shootTimer -- }
@@ -69,14 +85,23 @@ if shootKey && shootTimer <= 0
 	shootTimer = weapon.cooldown
 	
 	// create the bullet
-	var _xOffset = lengthdir_x( weapon.length + weaponOffsetDist, aimDir )
-	var _yOffset = lengthdir_y( weapon.length + weaponOffsetDist, aimDir )
-	var _bulletInst = instance_create_depth( x + _xOffset , centerY + _yOffset , depth-100 , weapon.bulletObj )
+	var _xOffset = lengthdir_x( weapon.length + weapon.offset_distance, aimDir )
+	var _yOffset = lengthdir_y( weapon.length + weapon.offset_distance, aimDir )
+
 	
-	// change the direction
-	with( _bulletInst )
+	var _spread = weapon.spread
+	var _spread_div = _spread / max( 1 , weapon.bullet_num - 1 )
+	
+	// create the correct number of bullets
+	for ( var _num = 0 ; _num < weapon.bullet_num ; _num++ )
 	{
-		dir = other.aimDir
+		var _bullet_instance = instance_create_depth( x + _xOffset , centerY + _yOffset , depth-100 , weapon.bullet_object )
+	
+		// change the direction
+		with( _bullet_instance )
+		{
+			dir = other.aimDir - _spread/2 + _spread_div*_num
+		}
 	}
 }
 #endregion
