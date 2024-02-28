@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "player_objects",
+    "path": "folders/Objects/player_objects.yy",
   },
   "parentObjectId": {
     "name": "obj_damage_enemy",
