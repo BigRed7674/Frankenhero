@@ -47,9 +47,9 @@ var _swap_key_pressed = mouse_check_button_pressed( mb_right )
 	//aim
 	aim_dir = point_direction(x, y_center, mouse_x, mouse_y);
 	//set correct direction player is facing
-	/*face = round(aim_dir/90); 
+	face = round(aim_dir/90); 
 	if face == 4 { face = 0; };
-	face is always 3 from the create event */
+	/*face is always 3 from the create event */
 
 	// animate sprite (will be necessary for actual art assets)
 	if x_speed == 0 && y_speed == 0
