@@ -14,10 +14,10 @@ y += yspd
 if destroy == true { instance_destroy() }
 
 // collision
-if place_meeting(x + xspd, y , obj_wallSolid) { destroy = true }
+if place_meeting(x + xspd, y , obj_wall_solid) { destroy = true }
 
 // bullet out of range
-if point_distance( xstart, ystart, x, y ) > maxDist { destroy = true }
+if point_distance( xstart, ystart, x, y ) > max_distance { destroy = true }
 
 #endregion
 

@@ -1,12 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bullet",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
-  ],
+  "name": "obj_wall_solid",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -14,8 +10,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_damage_enemy",
-    "path": "objects/obj_damage_enemy/obj_damage_enemy.yy",
+    "name": "obj_wall",
+    "path": "objects/obj_wall/obj_wall.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bullet_rect",
-    "path": "sprites/spr_bullet_rect/spr_bullet_rect.yy",
+    "name": "spr_wall_solid",
+    "path": "sprites/spr_wall_solid/spr_wall_solid.yy",
   },
   "spriteMaskId": null,
   "visible": true,

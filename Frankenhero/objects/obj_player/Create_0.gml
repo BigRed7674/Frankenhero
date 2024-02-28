@@ -1,25 +1,25 @@
 //Movement variables
-moveDir = 0;
-moveSpeed = 2;
-xspeed = 0;
-yspeed= 0;
+move_dir = 0;
+move_speed = 2;
+x_speed = 0;
+y_speed= 0;
 
 //Sprite Control
-centerYOffset = -30;
-y_center = y+centerYOffset;
+y_center_offset = -30;
+y_center = y + y_center_offset;
 
-aimDir = 0;
+aim_dir = 0;
 
 
 
 face = 3;
-playerSprite[0] = spr_playerRight; //0 on xy Plane
-playerSprite[1] = spr_playerUp; //90 on XY Plane
-playerSprite[2] = spr_playerLeft; // 180 on XY Plane
-playerSprite[3] = spr_playerDown; // 270 on XY Plane
+player_sprite[0] = spr_player_right; //0 on xy Plane
+player_sprite[1] = spr_player_up; //90 on XY Plane
+player_sprite[2] = spr_player_left; // 180 on XY Plane
+player_sprite[3] = spr_player_down; // 270 on XY Plane
 
 // weapon info
-shootTimer = 0
+shoot_timer = 0
 
 // add weapons to player weapon inventory
 array_push( global.player_weapon_inventory , global.weapon_list.flashlight )

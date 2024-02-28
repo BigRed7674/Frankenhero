@@ -1,9 +1,9 @@
 //get user inputs
-rightKey = keyboard_check( ord("D") );
-leftKey = keyboard_check(ord("A"));
-upKey = keyboard_check(ord("W"));
-downKey = keyboard_check(ord("S"));
-shootKey = mouse_check_button( mb_left )
+var _right_key = keyboard_check( ord("D") );
+var _left_key = keyboard_check(ord("A"));
+var _up_key = keyboard_check(ord("W"));
+var _down_key = keyboard_check(ord("S"));
+var _shoot_key = mouse_check_button( mb_left )
 
 // for ability testing, comment _swap_key_pressed for submission
 var _swap_key_pressed = mouse_check_button_pressed( mb_right )
@@ -12,54 +12,54 @@ var _swap_key_pressed = mouse_check_button_pressed( mb_right )
 //player movement
 #region
 	//get the direction
-	var _horizKey = rightKey - leftKey;
-	var _vertKey = downKey - upKey;
-	moveDir = point_direction(0, 0, _horizKey, _vertKey);
+	var _horiz_key = _right_key - _left_key;
+	var _vert_key = _down_key - _up_key;
+	move_dir = point_direction(0, 0, _horiz_key, _vert_key);
 	
 	//get x,y speed
 	var _speed = 0;
-	var _inputLevel = point_distance(0, 0, _horizKey, _vertKey);
-	_inputLevel = clamp(_inputLevel, 0, 1);
-	_speed = moveSpeed * _inputLevel;
+	var _input_level = point_distance(0, 0, _horiz_key, _vert_key);
+	_input_level = clamp(_input_level, 0, 1);
+	_speed = move_speed * _input_level;
 	
-	xspeed = lengthdir_x(_speed, moveDir);
-	yspeed = lengthdir_y(_speed, moveDir);
+	x_speed = lengthdir_x(_speed, move_dir);
+	y_speed = lengthdir_y(_speed, move_dir);
 	
 	//collision
-	if place_meeting(x+xspeed,y, obj_wall)
+	if place_meeting( x + x_speed , y , obj_wall )
 	{
-		xspeed = 0;
+		x_speed = 0;
 	}
-	if place_meeting(x,y+yspeed,obj_wall)
+	if place_meeting( x , y + y_speed , obj_wall )
 	{
-		yspeed = 0;
+		y_speed = 0;
 	}
 		
 	//Move the Player
-	x+=xspeed;
-	y+=yspeed;
+	x += x_speed;
+	y += y_speed;
 #endregion
 
 //sprite control
 #region
 	//player aiming
-	y_center = y + centerYOffset;
+	y_center = y + y_center_offset;
 	//aim
-	aimDir = point_direction(x, y_center, mouse_x, mouse_y);
+	aim_dir = point_direction(x, y_center, mouse_x, mouse_y);
 	//set correct direction player is facing
-	/*face = round(aimDir/90); 
+	/*face = round(aim_dir/90); 
 	if face == 4 { face = 0; };
 	face is always 3 from the create event */
 
 	// animate sprite (will be necessary for actual art assets)
-	if xspeed == 0 && yspeed == 0
+	if x_speed == 0 && y_speed == 0
 	{
 		image_index = 0;
 	}
 
 	//set player sprites
-	mask_index = playerSprite[3];
-	sprite_index = playerSprite[face];
+	mask_index = player_sprite[3];
+	sprite_index = player_sprite[face];
 #endregion
 
 // weapon swapping
@@ -78,15 +78,15 @@ if _swap_key_pressed
 
 // shoot the weapon
 #region
-if shootTimer > 0 { shootTimer -- }
-if shootKey && shootTimer <= 0
+if shoot_timer > 0 { shoot_timer -- }
+if _shoot_key && shoot_timer <= 0
 {
 	// reset the timer
-	shootTimer = weapon.cooldown
+	shoot_timer = weapon.cooldown
 	
 	// create the bullet
-	var _xOffset = lengthdir_x( weapon.length + weapon.offset_distance, aimDir )
-	var _yOffset = lengthdir_y( weapon.length + weapon.offset_distance, aimDir )
+	var _x_offset = lengthdir_x( weapon.length + weapon.offset_distance, aim_dir )
+	var _y_offset = lengthdir_y( weapon.length + weapon.offset_distance, aim_dir )
 
 	
 	var _spread = weapon.spread
@@ -95,12 +95,12 @@ if shootKey && shootTimer <= 0
 	// create the correct number of bullets
 	for ( var _num = 0 ; _num < weapon.bullet_num ; _num++ )
 	{
-		var _bullet_instance = instance_create_depth( x + _xOffset , y_center + _yOffset , depth-100 , weapon.bullet_object )
+		var _bullet_instance = instance_create_depth( x + _x_offset , y_center + _y_offset , depth-100 , weapon.bullet_object )
 	
 		// change the direction
 		with( _bullet_instance )
 		{
-			dir = other.aimDir - _spread/2 + _spread_div*_num
+			dir = other.aim_dir - _spread/2 + _spread_div*_num
 		}
 	}
 }

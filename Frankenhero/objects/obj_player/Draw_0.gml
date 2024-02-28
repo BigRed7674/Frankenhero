@@ -1,5 +1,5 @@
 //draw flashlight behind player
-if aimDir >= 0 && aimDir < 180 {
+if aim_dir >= 0 && aim_dir < 180 {
 	draw_flashlight();
 }
 
@@ -7,7 +7,7 @@ if aimDir >= 0 && aimDir < 180 {
 draw_self();
 
 //Draw the Flashlight
-if aimDir >= 180 && aimDir <= 360 {
+if aim_dir >= 180 && aim_dir <= 360 {
 	draw_flashlight(); //This code is in custom_scripts
 }
 

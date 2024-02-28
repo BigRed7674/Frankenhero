@@ -6,5 +6,5 @@ xspd = 0;
 yspd = 0;
 
 // cleanup
-maxDist = 12*5+1
+max_distance = 12*5+1
 destroy = false
