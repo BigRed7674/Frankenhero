@@ -10,7 +10,7 @@ y_center = y + y_center_offset;
 
 aim_dir = 0;
 
-
+hp = 20
 
 face = 3;
 player_sprite[0] = spr_player_right; //0 on xy Plane

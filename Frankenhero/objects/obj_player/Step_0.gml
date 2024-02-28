@@ -1,9 +1,9 @@
 //get user inputs
-var _right_key = keyboard_check( ord("D") );
-var _left_key = keyboard_check(ord("A"));
-var _up_key = keyboard_check(ord("W"));
-var _down_key = keyboard_check(ord("S"));
-var _shoot_key = mouse_check_button( mb_left )
+var _right_key = global.rightkey;
+var _left_key = global.leftkey;
+var _up_key = global.upkey;
+var _down_key = global.downkey;
+var _shoot_key = global.shootkey;
 
 // for ability testing, comment _swap_key_pressed for submission
 var _swap_key_pressed = mouse_check_button_pressed( mb_right )
@@ -105,3 +105,27 @@ if _shoot_key && shoot_timer <= 0
 	}
 }
 #endregion
+
+//player damage
+#region
+if place_meeting( x , y , obj_damage_player )
+{
+	var _inst = instance_place( x , y , obj_damage_player )
+	
+	// take damage from specific instance
+	hp -= _inst.damage;
+	
+	// tell the damage instance to destroy itself
+	_inst.destroy = true;
+}
+
+
+//death / game over
+if hp <= 0
+{
+	instance_create_depth(0, 0, -10000, obj_game_over);
+	//destroy ourself
+	instance_destroy();
+}
+#endregion
+

@@ -38,9 +38,11 @@ bbox_bottom < -_pad || bbox_top > room_height + _pad
 {
 	destroy = true
 }
-
+//player collision
+if hit_confirm == true && player_destroy == true { destroy = true; };
+//actually destroy self
 if destroy = true { instance_destroy() }
 // wall collision
 if place_meeting( x , y , obj_wall_solid ) { destroy = true }
 // player collision
-if place_meeting( x , y , obj_player ) && player_destroy = true { destroy = true }
+//if place_meeting( x , y , obj_player ) && player_destroy = true { destroy = true }

@@ -12,3 +12,5 @@ if aim_dir >= 180 && aim_dir <= 360 {
 }
 
 
+//draw HP as number
+draw_text(x, y, string(hp));
