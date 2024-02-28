@@ -39,6 +39,7 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+    {"id":{"name":"obj_wall03","path":"objects/obj_wall03/obj_wall03.yy",},},
     {"id":{"name":"spr_rockfloor_tan","path":"sprites/spr_rockfloor_tan/spr_rockfloor_tan.yy",},},
     {"id":{"name":"spr_player_down","path":"sprites/spr_player_down/spr_player_down.yy",},},
     {"id":{"name":"spr_enemy_sheep","path":"sprites/spr_enemy_sheep/spr_enemy_sheep.yy",},},
@@ -59,6 +60,7 @@
     {"id":{"name":"spr_rockbed","path":"sprites/spr_rockbed/spr_rockbed.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"spr_player_right","path":"sprites/spr_player_right/spr_player_right.yy",},},
+    {"id":{"name":"obj_wall02","path":"objects/obj_wall02/obj_wall02.yy",},},
     {"id":{"name":"obj_wall_solid","path":"objects/obj_wall_solid/obj_wall_solid.yy",},},
     {"id":{"name":"spr_rockbed_black","path":"sprites/spr_rockbed_black/spr_rockbed_black.yy",},},
     {"id":{"name":"spr_rock02","path":"sprites/spr_rock02/spr_rock02.yy",},},
@@ -78,6 +80,7 @@
     {"id":{"name":"obj_bullet_enemy","path":"objects/obj_bullet_enemy/obj_bullet_enemy.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_wall01","path":"objects/obj_wall01/obj_wall01.yy",},},
     {"id":{"name":"obj_damage_parent","path":"objects/obj_damage_parent/obj_damage_parent.yy",},},
     {"id":{"name":"spr_rock03","path":"sprites/spr_rock03/spr_rock03.yy",},},
     {"id":{"name":"spr_bullet_enemy","path":"sprites/spr_bullet_enemy/spr_bullet_enemy.yy",},},

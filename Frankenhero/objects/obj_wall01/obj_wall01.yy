@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_wall_solid",
+  "name": "obj_wall01",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_rock04",
-    "path": "sprites/spr_rock04/spr_rock04.yy",
+    "name": "spr_rock03",
+    "path": "sprites/spr_rock03/spr_rock03.yy",
   },
   "spriteMaskId": null,
   "visible": true,

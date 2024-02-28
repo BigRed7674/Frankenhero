@@ -22,6 +22,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"obj_wall03","order":13,"path":"objects/obj_wall03/obj_wall03.yy",},
     {"name":"spr_rockfloor_tan","order":6,"path":"sprites/spr_rockfloor_tan/spr_rockfloor_tan.yy",},
     {"name":"spr_enemy_sheep","order":3,"path":"sprites/spr_enemy_sheep/spr_enemy_sheep.yy",},
     {"name":"spr_wall01","order":7,"path":"sprites/spr_wall01/spr_wall01.yy",},
@@ -39,6 +40,7 @@
     {"name":"spr_rockbed","order":4,"path":"sprites/spr_rockbed/spr_rockbed.yy",},
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"spr_player_right","order":2,"path":"sprites/spr_player_right/spr_player_right.yy",},
+    {"name":"obj_wall02","order":12,"path":"objects/obj_wall02/obj_wall02.yy",},
     {"name":"obj_wall_solid","order":2,"path":"objects/obj_wall_solid/obj_wall_solid.yy",},
     {"name":"spr_rockbed_black","order":5,"path":"sprites/spr_rockbed_black/spr_rockbed_black.yy",},
     {"name":"spr_rock02","order":1,"path":"sprites/spr_rock02/spr_rock02.yy",},
@@ -56,6 +58,7 @@
     {"name":"spr_wall_tile","order":4,"path":"sprites/spr_wall_tile/spr_wall_tile.yy",},
     {"name":"obj_bullet_enemy","order":9,"path":"objects/obj_bullet_enemy/obj_bullet_enemy.yy",},
     {"name":"Sprite2","order":2,"path":"sprites/Sprite2/Sprite2.yy",},
+    {"name":"obj_wall01","order":11,"path":"objects/obj_wall01/obj_wall01.yy",},
     {"name":"obj_damage_parent","order":6,"path":"objects/obj_damage_parent/obj_damage_parent.yy",},
     {"name":"spr_rock03","order":2,"path":"sprites/spr_rock03/spr_rock03.yy",},
     {"name":"spr_bullet_enemy","order":1,"path":"sprites/spr_bullet_enemy/spr_bullet_enemy.yy",},
