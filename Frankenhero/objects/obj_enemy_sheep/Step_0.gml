@@ -73,8 +73,14 @@ switch( state )
 			// reset the timer for new state
 			shoot_timer = 0
 		}
-		
+	
 	break
+	
+	// death state
+	case 2:
+		spd = 0
+		image_index = 1
+	
 }
 
 // chase player
@@ -110,3 +116,8 @@ depth = -y
 // Inherit the parent event
 	// getting damaged and dying
 event_inherited();
+// death
+if destroy == true
+{
+	state = 2
+}

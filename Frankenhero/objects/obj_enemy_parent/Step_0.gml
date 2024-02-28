@@ -13,5 +13,5 @@ if place_meeting( x , y , obj_damage_enemy )
 // death
 if hp <= 0
 {
-	instance_destroy()
+	destroy = true
 }

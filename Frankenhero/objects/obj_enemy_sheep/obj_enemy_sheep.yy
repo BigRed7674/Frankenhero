@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_enemy_sheep_black",
-    "path": "sprites/spr_enemy_sheep_black/spr_enemy_sheep_black.yy",
+    "name": "spr_enemy_sheep",
+    "path": "sprites/spr_enemy_sheep/spr_enemy_sheep.yy",
   },
   "spriteMaskId": null,
   "visible": true,

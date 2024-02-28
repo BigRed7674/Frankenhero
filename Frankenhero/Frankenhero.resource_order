@@ -23,6 +23,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"spr_rockfloor_tan","order":6,"path":"sprites/spr_rockfloor_tan/spr_rockfloor_tan.yy",},
+    {"name":"spr_enemy_sheep","order":3,"path":"sprites/spr_enemy_sheep/spr_enemy_sheep.yy",},
     {"name":"spr_wall01","order":7,"path":"sprites/spr_wall01/spr_wall01.yy",},
     {"name":"obj_enemy_sheep","order":7,"path":"objects/obj_enemy_sheep/obj_enemy_sheep.yy",},
     {"name":"spr_bullet_rect","order":6,"path":"sprites/spr_bullet_rect/spr_bullet_rect.yy",},
