@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_bookshelf",
-  "bboxMode":0,
-  "bbox_bottom":789,
+  "bboxMode":2,
+  "bbox_bottom":317,
   "bbox_left":150,
-  "bbox_right":649,
+  "bbox_right":647,
   "bbox_top":40,
   "collisionKind":1,
   "collisionTolerance":0,

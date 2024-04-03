@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Object31",
+  "%Name":"obj_invisible_wall",
   "eventList":[],
   "managed":true,
-  "name":"Object31",
+  "name":"obj_invisible_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Lobby_Object",
-    "path":"folders/Objects/Lobby_Object.yy",
+    "name":"Environment",
+    "path":"folders/Objects/Environment.yy",
   },
   "parentObjectId":{
     "name":"obj_wall_solid",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bookshelf",
-    "path":"sprites/spr_bookshelf/spr_bookshelf.yy",
+    "name":"spr_invisible_wall",
+    "path":"sprites/spr_invisible_wall/spr_invisible_wall.yy",
   },
   "spriteMaskId":null,
   "visible":true,

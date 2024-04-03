@@ -34,6 +34,7 @@ var _swap_key_pressed = mouse_check_button_pressed( mb_right )
 	{
 		y_speed = 0;
 	}
+
 		
 	//Move the Player
 	x += x_speed;
@@ -79,7 +80,8 @@ if _swap_key_pressed
 // shoot the weapon
 #region
 if shoot_timer > 0 { shoot_timer -- }
-if _shoot_key && shoot_timer <= 0
+
+if (_shoot_key && shoot_timer <= 0) && room_get_name(room) != "rm_init"
 {
 	// reset the timer
 	shoot_timer = weapon.cooldown

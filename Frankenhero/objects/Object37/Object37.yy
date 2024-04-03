@@ -31,9 +31,6 @@
     "name":"spr_wall_tile",
     "path":"sprites/spr_wall_tile/spr_wall_tile.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_window",
-    "path":"sprites/spr_window/spr_window.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

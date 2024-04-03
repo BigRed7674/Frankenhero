@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"Sprite53",
-  "bboxMode":0,
-  "bbox_bottom":799,
+  "bboxMode":2,
+  "bbox_bottom":455,
   "bbox_left":130,
-  "bbox_right":669,
+  "bbox_right":661,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
