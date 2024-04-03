@@ -121,6 +121,14 @@ if place_meeting( x , y , obj_damage_player )
 	_inst.destroy = true;
 }
 
+// damage from charge
+if place_meeting( x , y, obj_enemy_parent )
+{
+	var _inst = instance_place( x , y , obj_enemy_parent )
+	
+	// take damage from specific instance
+	hp -= _inst.damage;
+}
 
 //death / game over
 if hp <= 0

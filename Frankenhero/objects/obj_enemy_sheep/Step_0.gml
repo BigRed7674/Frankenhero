@@ -1,15 +1,10 @@
 // state machine
 switch( state )
 {
-	// chase state
+	// idle state
 	case 0:	
-		// get the player's direction
-		if instance_exists (obj_player )
-		{
-			dir = point_direction( x , y , obj_player.x , obj_player.y )
-		}
-		// set the correct speed
-		spd = chase_spd
+				// set the correct speed
+		spd = 0
 		
 		// transition to state 1
 		var _cam_left = camera_get_view_x( view_camera[0] )
@@ -24,7 +19,7 @@ switch( state )
 		}
 		if shoot_timer > cooldown_time
 		{
-			// go to shoot state
+			// go to charge state
 			state = 1
 			// reset timer for new state
 			shoot_timer = 0
@@ -32,41 +27,37 @@ switch( state )
 		
 	break
 	
-	// pause and shoot state
+	// charge state
 	case 1:
-		// get the player's direction
-		if instance_exists (obj_player )
-		{
-			dir = point_direction( x , y , obj_player.x , obj_player.y )
-		}
-		
-		// set the correct speed
-		spd = 0
-		
-		// stop animating / manually set the image index
-		image_index = 0
-		
-		// shoot a bullet
+		// charge the player
 		shoot_timer++
-		// create a bullet
+		// set charge direction
 		if shoot_timer == 1
 		{
-			bullet_instance = instance_create_depth( x + bullet_x_offset*face ,
-						y + bullet_y_offset , depth , obj_bullet_enemy )
+			// get the player's direction
+			if instance_exists (obj_player )
+			{
+			dir = point_direction( x , y , obj_player.x , obj_player.y )
+			}
+			spd = chase_spd
 		}
-		// keep the bullet in correct position
-		if shoot_timer < windup_time && instance_exists( bullet_instance )
+
+		// charge after windup time
+		if shoot_timer == windup_time
 		{
-			bullet_instance.x = x + bullet_x_offset*face
-		}
-		// shoot the bullet after windup time
-		if shoot_timer == windup_time && instance_exists( bullet_instance )
-		{
-			// set bullet state to movement
-			bullet_instance.state = 1
+			// set the correct speed
+			spd = charge_spd
 		}
 		// recover and return to state 0
-		if shoot_timer > windup_time + recover_time
+		if place_meeting( x , y, obj_wall )
+		{
+			spd *= 0.1
+		}
+		else if shoot_timer > windup_time + charge_time
+		{
+			spd *= 0.9
+		}
+		if shoot_timer > windup_time + charge_time + recover_time
 		{
 			// go back to chase state
 			state = 0
@@ -80,6 +71,8 @@ switch( state )
 	case 2:
 		spd = 0
 		image_index = 1
+	break
+	
 	
 }
 
