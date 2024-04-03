@@ -8,8 +8,9 @@ draw_set_font(PixelFont);
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
 /// @DnDHash : 68BBDB6E
+/// @DnDArgument : "value" "false"
 /// @DnDArgument : "var" "global.level1_complete"
-global.level1_complete = 0;
+global.level1_complete = false;
 
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1

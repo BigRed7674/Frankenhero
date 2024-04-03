@@ -21,9 +21,9 @@ global.current_x = -80;
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
 /// @DnDHash : 440BB982
-/// @DnDArgument : "value" "[1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,0,1,0,1,1,1,1,1,1,1,0,1,1,0]"
+/// @DnDArgument : "value" "[1,0,1,0,1,1,0,1,1,1,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0]"
 /// @DnDArgument : "var" "dialogue_lobby_1_character"
-global.dialogue_lobby_1_character = [1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,0,1,0,1,1,1,1,1,1,1,0,1,1,0];
+global.dialogue_lobby_1_character = [1,0,1,0,1,1,0,1,1,1,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0];
 
 /// @DnDAction : YoYo Games.Data Structures.Create_List
 /// @DnDVersion : 1
@@ -40,38 +40,35 @@ dialogue_lobby_1 = ds_list_create();
 /// @DnDAction : YoYo Games.Data Structures.List_Add
 /// @DnDVersion : 1
 /// @DnDHash : 2DF0CDE0
-/// @DnDInput : 29
+/// @DnDInput : 26
 /// @DnDArgument : "var" "dialogue_lobby_1"
-/// @DnDArgument : "value" ""BAAAA, It is almost 10 , \nArent you supposed to  \ngo to bed now?""
-/// @DnDArgument : "value_1" ""But I want to wait for my mom \nand dad to come back.""
-/// @DnDArgument : "value_2" ""BAA Mom said  \nthey will be super late  \nyou remember? ""
-/// @DnDArgument : "value_3" ""emmm""
-/// @DnDArgument : "value_4" ""BAAA Ethan,  \nI have promised mom  \nwe would go to bed in time. ""
-/// @DnDArgument : "value_5" ""If you do not  \nget enough sleep, \nthere is no chance  \nmom would not let us go to  \nthe zoo tomorrow""
-/// @DnDArgument : "value_6" ""emmm ""
-/// @DnDArgument : "value_7" ""BAA Ethan, \nI really want to go,\n you know my brother \nSheepbee works there right? ""
-/// @DnDArgument : "value_8" ""Yeah I want to go as well""
-/// @DnDArgument : "value_9" ""Then let’s sleepbaa""
-/// @DnDArgument : "value_10" ""But""
-/// @DnDArgument : "value_11" ""You can always count us \nif you are unable to sleep""
-/// @DnDArgument : "value_12" ""emmm""
-/// @DnDArgument : "value_13" ""I ll call my 99 sisters \nto see if they can do \na night shift with me""
-/// @DnDArgument : "value_14" ""Nah I am sleepy\nI think 20 sheep should be good""
-/// @DnDArgument : "value_15" ""But but, \ncan we keep the light on? ""
-/// @DnDArgument : "value_16" ""Are you afraid of \nDARKNESS""
-/// @DnDArgument : "value_17" ""yeaaaaa ""
-/// @DnDArgument : "value_18" ""Baaaaa I see! \nThank you for \nbeing honest with me! ""
-/// @DnDArgument : "value_19" ""Why don’t we play a game? ""
-/// @DnDArgument : "value_20" ""I promise afterwards \nyou will not fear darkness""
-/// @DnDArgument : "value_21" ""Take this flashlight! \nThough with limited battery, \nit should be \nenough for you! ""
-/// @DnDArgument : "value_22" ""Remember  \nif anything is going towards you \njust press space bar  \nto jump up!""
-/// @DnDArgument : "value_23" ""I am always here with you  \nand You will be transferred \nback here whenever you are \nnot gonna make it! ""
-/// @DnDArgument : "value_24" ""Take a deep breathe when you are stressed and always remember,  \nnothing will hurt you!""
-/// @DnDArgument : "value_25" ""What should I do?""
-/// @DnDArgument : "value_26" ""Find the switch \nand turn it on! ""
-/// @DnDArgument : "value_27" ""Promise you will be brave! ""
-/// @DnDArgument : "value_28" ""I promise!""
-ds_list_add(dialogue_lobby_1, "BAAAA, It is almost 10 , \nArent you supposed to  \ngo to bed now?", "But I want to wait for my mom \nand dad to come back.", "BAA Mom said  \nthey will be super late  \nyou remember? ", "emmm", "BAAA Ethan,  \nI have promised mom  \nwe would go to bed in time. ", "If you do not  \nget enough sleep, \nthere is no chance  \nmom would not let us go to  \nthe zoo tomorrow", "emmm ", "BAA Ethan, \nI really want to go,\n you know my brother \nSheepbee works there right? ", "Yeah I want to go as well", "Then let’s sleepbaa", "But", "You can always count us \nif you are unable to sleep", "emmm", "I ll call my 99 sisters \nto see if they can do \na night shift with me", "Nah I am sleepy\nI think 20 sheep should be good", "But but, \ncan we keep the light on? ", "Are you afraid of \nDARKNESS", "yeaaaaa ", "Baaaaa I see! \nThank you for \nbeing honest with me! ", "Why don’t we play a game? ", "I promise afterwards \nyou will not fear darkness", "Take this flashlight! \nThough with limited battery, \nit should be \nenough for you! ", "Remember  \nif anything is going towards you \njust press space bar  \nto jump up!", "I am always here with you  \nand You will be transferred \nback here whenever you are \nnot gonna make it! ", "Take a deep breathe when you are stressed and always remember,  \nnothing will hurt you!", "What should I do?", "Find the switch \nand turn it on! ", "Promise you will be brave! ", "I promise!");
+/// @DnDArgument : "value" ""It is almost 10. Let’s go to bed Ethan!""
+/// @DnDArgument : "value_1" ""But I want to wait for my mom and dad to come back.""
+/// @DnDArgument : "value_2" ""Mom said they will be super late tonight, didn’t she? ""
+/// @DnDArgument : "value_3" ""That’s true.""
+/// @DnDArgument : "value_4" ""Ethan, I have promised mom we would go to bed on time. ""
+/// @DnDArgument : "value_5" ""If you don’t get enough sleep, there’s no chance mom would let us go to the playgroud.""
+/// @DnDArgument : "value_6" ""Yeah I wanna play with other kids so bad!""
+/// @DnDArgument : "value_7" ""Then let’s sleepaaa.""
+/// @DnDArgument : "value_8" ""I ll call my 99 sisters \nto see if they can do \na night shift with me""
+/// @DnDArgument : "value_9" ""It is not that I am not sleepy, but…""
+/// @DnDArgument : "value_10" ""Can we keep the light on? ""
+/// @DnDArgument : "value_11" ""Ethan, are you afraid of darkness? ""
+/// @DnDArgument : "value_12" ""yeaaaaa ""
+/// @DnDArgument : "value_13" ""...""
+/// @DnDArgument : "value_14" ""...""
+/// @DnDArgument : "value_15" ""Yes.""
+/// @DnDArgument : "value_16" ""]I always feel there’s something hiding in the darkness.""
+/// @DnDArgument : "value_17" ""Baaaaa I see! ""
+/// @DnDArgument : "value_18" ""Thank you for being honest with me! ""
+/// @DnDArgument : "value_19" ""Why don’t you play a game with me? ""
+/// @DnDArgument : "value_20" ""I promise afterwards you will not fear darkness""
+/// @DnDArgument : "value_21" ""Take this flashlight! Though with limited battery, it should be enough for you! ""
+/// @DnDArgument : "value_22" ""Remember if anything is going towards you just press spacebar to jump up! ""
+/// @DnDArgument : "value_23" ""Find the switch and turn it on! ""
+/// @DnDArgument : "value_24" ""Promise you will be brave Ethan! ""
+/// @DnDArgument : "value_25" ""I promise!""
+ds_list_add(dialogue_lobby_1, "It is almost 10. Let’s go to bed Ethan!", "But I want to wait for my mom and dad to come back.", "Mom said they will be super late tonight, didn’t she? ", "That’s true.", "Ethan, I have promised mom we would go to bed on time. ", "If you don’t get enough sleep, there’s no chance mom would let us go to the playgroud.", "Yeah I wanna play with other kids so bad!", "Then let’s sleepaaa.", "I ll call my 99 sisters \nto see if they can do \na night shift with me", "It is not that I am not sleepy, but…", "Can we keep the light on? ", "Ethan, are you afraid of darkness? ", "yeaaaaa ", "...", "...", "Yes.", "]I always feel there’s something hiding in the darkness.", "Baaaaa I see! ", "Thank you for being honest with me! ", "Why don’t you play a game with me? ", "I promise afterwards you will not fear darkness", "Take this flashlight! Though with limited battery, it should be enough for you! ", "Remember if anything is going towards you just press spacebar to jump up! ", "Find the switch and turn it on! ", "Promise you will be brave Ethan! ", "I promise!");
 
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1

@@ -41,6 +41,21 @@ if(global.sheep_dialogue_index >= sentence_count)
 	{
 		/// @DnDAction : YoYo Games.Switch.Case
 		/// @DnDVersion : 1
+		/// @DnDHash : 6655F278
+		/// @DnDParent : 433C46FC
+		/// @DnDArgument : "const" "1"
+		case 1:
+			/// @DnDAction : YoYo Games.Rooms.Go_To_Room
+			/// @DnDVersion : 1
+			/// @DnDHash : 14E8E4FD
+			/// @DnDParent : 6655F278
+			/// @DnDArgument : "room" "Room1"
+			/// @DnDSaveInfo : "room" "Room1"
+			room_goto(Room1);
+			break;
+	
+		/// @DnDAction : YoYo Games.Switch.Case
+		/// @DnDVersion : 1
 		/// @DnDHash : 7D0299B3
 		/// @DnDParent : 433C46FC
 		/// @DnDArgument : "const" "2"
@@ -83,7 +98,6 @@ if(global.sheep_dialogue_index >= sentence_count)
 			/// @DnDHash : 3DCD0DEA
 			/// @DnDParent : 7D0299B3
 			/// @DnDArgument : "room" "OriginalRoom_Lobby"
-			/// @DnDSaveInfo : "room" "OriginalRoom_Lobby"
 			room_goto(OriginalRoom_Lobby);
 		
 			/// @DnDAction : YoYo Games.Common.Set_Global
@@ -298,7 +312,6 @@ if(!(global.sheep_dialogue_index >= sentence_count))
 			/// @DnDApplyTo : {obj_sheepdialoguebox}
 			/// @DnDParent : 22DD1B70
 			/// @DnDArgument : "spriteind" "spr_blacksheepdialoguebox20"
-			/// @DnDSaveInfo : "spriteind" "spr_blacksheepdialoguebox20"
 			with(obj_sheepdialoguebox) {
 			sprite_index = spr_blacksheepdialoguebox20;
 			image_index = 0;
