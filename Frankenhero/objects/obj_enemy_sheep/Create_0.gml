@@ -2,6 +2,7 @@
 event_inherited();
 
 hp = 100
+maxHp = 100
 
 spd = 0
 chase_spd = 1
