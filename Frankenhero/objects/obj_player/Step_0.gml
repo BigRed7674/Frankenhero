@@ -110,15 +110,34 @@ if (_shoot_key && shoot_timer <= 0) && room_get_name(room) != "rm_init"
 
 //player damage
 #region
+if (invincible > 0)
+{
+	invincible--;
+	if invincible mod 5 == 0
+	{
+		if image_alpha == 1
+		{
+			image_alpha = 0;
+		} else {
+			image_alpha = 1;
+		}
+	}
+}
+
 if place_meeting( x , y , obj_damage_player )
 {
 	var _inst = instance_place( x , y , obj_damage_player )
 	
-	// take damage from specific instance
-	hp -= _inst.damage;
+	if invincible == 0
+	{
+		// take damage from specific instance
+		hp -= _inst.damage;
+		invincible = 100;
+	}
 	
 	// tell the damage instance to destroy itself
 	_inst.destroy = true;
+	
 }
 
 // damage from charge
@@ -126,8 +145,14 @@ if place_meeting( x , y, obj_enemy_parent )
 {
 	var _inst = instance_place( x , y , obj_enemy_parent )
 	
-	// take damage from specific instance
-	hp -= _inst.damage;
+	if invincible == 0
+	{
+		// take damage from specific instance
+		hp -= _inst.damage;
+		invincible = 100;
+	}
+	
+
 }
 
 //death / game over

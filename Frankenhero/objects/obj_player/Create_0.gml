@@ -12,6 +12,8 @@ aim_dir = 0;
 
 hp = 20
 
+invincible = 0
+
 face = 3;
 player_sprite[0] = spr_player_right; //0 on xy Plane
 player_sprite[1] = spr_player_up; //90 on XY Plane
