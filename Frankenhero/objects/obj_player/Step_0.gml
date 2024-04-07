@@ -5,6 +5,7 @@ var _up_key = global.upkey;
 var _down_key = global.downkey;
 var _shoot_key = global.shootkey;
 
+
 // for ability testing, comment _swap_key_pressed for submission
 var _swap_key_pressed = mouse_check_button_pressed( mb_right )
 
