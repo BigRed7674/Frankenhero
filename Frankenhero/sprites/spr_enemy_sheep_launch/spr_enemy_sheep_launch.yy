@@ -26,7 +26,7 @@
   ],
   "name":"spr_enemy_sheep_launch",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Enemy_Sprites",
     "path":"folders/Sprites/Enemy_Sprites.yy",
@@ -88,7 +88,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":40,
-    "yorigin":40,
+    "yorigin":80,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

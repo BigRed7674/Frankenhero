@@ -1,9 +1,7 @@
 event_inherited()
 
-dir = 0;
-spd = 10;
-xspd = 0;
-yspd = 0;
+// speed
+spd = 10
 
 // cleanup
 max_distance = 12*5+1

@@ -125,6 +125,7 @@ if (invincible > 0)
 	}
 }
 
+// damage from bullet
 if place_meeting( x , y , obj_damage_player )
 {
 	var _inst = instance_place( x , y , obj_damage_player )

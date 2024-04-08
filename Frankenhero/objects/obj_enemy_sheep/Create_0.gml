@@ -1,17 +1,11 @@
 // Inherit the parent event
 event_inherited();
 
-hp = 100
-maxHp = 100
 
-spd = 0
+// speeds
 wander_spd = 0.5
-move_spd = 1
 launch_spd = 5
 attack_spd = 10
-dir = 0
-x_spd = 0
-y_spd = 0
 
 
 // state machine
@@ -30,7 +24,6 @@ notice_time = 100
 charge_time = 40
 attack_time = 30
 recover_time = 60
-bounce = false
 
 
 /*bullet_instance = noone

@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bullet_enemy",
+  "%Name":"obj_enemy_goose",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_bullet_enemy",
+  "name":"obj_enemy_goose",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemies",
     "path":"folders/Objects/Enemies.yy",
   },
   "parentObjectId":{
-    "name":"obj_damage_player",
-    "path":"objects/obj_damage_player/obj_damage_player.yy",
+    "name":"obj_enemy_parent",
+    "path":"objects/obj_enemy_parent/obj_enemy_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_enemy_large",
-    "path":"sprites/spr_bullet_enemy_large/spr_bullet_enemy_large.yy",
+    "name":"spr_enemy_goose_move",
+    "path":"sprites/spr_enemy_goose_move/spr_enemy_goose_move.yy",
   },
   "spriteMaskId":null,
   "visible":true,

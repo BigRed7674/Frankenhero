@@ -1,7 +1,15 @@
 // Inherit the parent event
 event_inherited();
 
-maxHp = 10
-hp = 10
+maxHp = 100
+hp = 100
 destroy = false
-damage = 1
+damage = 2
+
+bounce = false
+bounce_multiplier = 0.3
+
+spd = 0
+x_spd = 0
+y_spd = 0
+dir = 0

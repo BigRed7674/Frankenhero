@@ -2,22 +2,16 @@
 switch( state )
 {
 	// wait for enemy to shoot state
-	case 0:
+	case "wait":
 	
-		// aim for the player
-		if instance_exists( obj_player )
-		{
-			dir = point_direction( x , y , obj_player.x , obj_player.y )
-		}
 		
-		// set depth to make bullet more visible
-		depth = -y - 50
+		
 	
 	break
 	
 	// shoot and travel
-	case 1:
-	
+	case "shoot":
+		
 		// movement
 		x_spd = lengthdir_x( spd , dir )
 		y_spd = lengthdir_y( spd , dir )

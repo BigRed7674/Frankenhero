@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ally_sheep_walking",
-    "path":"sprites/spr_ally_sheep_walking/spr_ally_sheep_walking.yy",
+    "name":"spr_ally_sheep_move",
+    "path":"sprites/spr_ally_sheep_move/spr_ally_sheep_move.yy",
   },
   "spriteMaskId":null,
   "visible":true,
