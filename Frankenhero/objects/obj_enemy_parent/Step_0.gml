@@ -7,7 +7,7 @@ if place_meeting( x , y , obj_damage_enemy )
 	hp -= _inst.damage;
 	
 	// tell the damage instance to destroy itself
-	_inst.destroy = true;
+	//_inst.destroy = true;
 }
 
 // death

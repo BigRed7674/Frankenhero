@@ -20,9 +20,9 @@ global.weapon_list =
 {
 	flashlight : new CreateWeapon( spr_flashlight ,
 	sprite_get_bbox_right( spr_flashlight ) * 2, 20,
-	obj_bullet, 1 , 5 , 45 ),
+	obj_bullet_flashlight, 1 , 5 , 45 ),
 	
 	test : new CreateWeapon( spr_flashlight ,
 	sprite_get_bbox_right( spr_flashlight ) - sprite_get_xoffset( spr_flashlight ), 10,
-	obj_bullet, 20 , 1 , 0 )
+	obj_bullet_flashlight, 20 , 1 , 0 )
 }

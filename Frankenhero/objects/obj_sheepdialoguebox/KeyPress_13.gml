@@ -49,9 +49,9 @@ if(global.sheep_dialogue_index >= sentence_count)
 			/// @DnDVersion : 1
 			/// @DnDHash : 14E8E4FD
 			/// @DnDParent : 6655F278
-			/// @DnDArgument : "room" "Room1"
-			/// @DnDSaveInfo : "room" "Room1"
-			room_goto(Room1);
+			/// @DnDArgument : "room" "rm_sheep"
+			/// @DnDSaveInfo : "room" "rm_sheep"
+			room_goto(rm_sheep);
 			break;
 	
 		/// @DnDAction : YoYo Games.Switch.Case

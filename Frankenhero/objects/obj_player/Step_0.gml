@@ -82,7 +82,7 @@ if _swap_key_pressed
 #region
 if shoot_timer > 0 { shoot_timer -- }
 
-if (_shoot_key && shoot_timer <= 0) && room_get_name(room) != "rm_init"
+if (_shoot_key && shoot_timer <= 0) && room_get_name(room) == "rm_sheep"
 {
 	// reset the timer
 	shoot_timer = weapon.cooldown
@@ -133,7 +133,7 @@ if place_meeting( x , y , obj_damage_player )
 	{
 		// take damage from specific instance
 		hp -= _inst.damage;
-		invincible = 100;
+		invincible = itime;
 	}
 	
 	// tell the damage instance to destroy itself
@@ -150,7 +150,7 @@ if place_meeting( x , y, obj_enemy_parent )
 	{
 		// take damage from specific instance
 		hp -= _inst.damage;
-		invincible = 100;
+		invincible = itime;
 	}
 	
 

@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_damage_player",
+  "%Name":"obj_enemy_sheep_white",
   "eventList":[],
   "managed":true,
-  "name":"obj_damage_player",
+  "name":"obj_enemy_sheep_white",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemies",
     "path":"folders/Objects/Enemies.yy",
   },
   "parentObjectId":{
-    "name":"obj_damage_parent",
-    "path":"objects/obj_damage_parent/obj_damage_parent.yy",
+    "name":"obj_ally_enemy_parent",
+    "path":"objects/obj_ally_enemy_parent/obj_ally_enemy_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_enemy_sheep_white",
+    "path":"sprites/spr_enemy_sheep_white/spr_enemy_sheep_white.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

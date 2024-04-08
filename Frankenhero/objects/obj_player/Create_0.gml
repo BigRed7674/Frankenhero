@@ -14,6 +14,7 @@ hp = 20
 maxHp = 20
 
 invincible = 0
+itime = 100
 
 face = 3;
 player_sprite[0] = spr_player_right; //0 on xy Plane
