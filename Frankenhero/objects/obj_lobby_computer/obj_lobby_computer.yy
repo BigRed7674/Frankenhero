@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_switch",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_lobby_computer",
+  "eventList":[],
   "managed":true,
-  "name":"obj_switch",
+  "name":"obj_lobby_computer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Cave",
-    "path":"folders/Objects/Environment/Cave.yy",
+    "name":"Lobby_Object",
+    "path":"folders/Objects/Lobby_Object.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_wall_solid",
+    "path":"objects/obj_wall_solid/obj_wall_solid.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_switch",
-    "path":"sprites/spr_switch/spr_switch.yy",
+    "name":"spr_computer_table",
+    "path":"sprites/spr_computer_table/spr_computer_table.yy",
   },
   "spriteMaskId":null,
   "visible":true,

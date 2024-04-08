@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall02",
+  "%Name":"obj_lobby_window",
   "eventList":[],
   "managed":true,
-  "name":"obj_wall02",
+  "name":"obj_lobby_window",
   "overriddenProperties":[],
   "parent":{
-    "name":"Environment",
-    "path":"folders/Objects/Environment.yy",
+    "name":"Lobby_Object",
+    "path":"folders/Objects/Lobby_Object.yy",
   },
   "parentObjectId":{
     "name":"obj_wall_solid",
@@ -31,9 +31,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_rock01",
-    "path":"sprites/spr_rock01/spr_rock01.yy",
+    "name":"spr_window",
+    "path":"sprites/spr_window/spr_window.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_window",
+    "path":"sprites/spr_window/spr_window.yy",
+  },
   "visible":true,
 }

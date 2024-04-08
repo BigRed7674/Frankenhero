@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_rockbed02",
-    "path":"sprites/spr_rockbed02/spr_rockbed02.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

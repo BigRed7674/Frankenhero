@@ -9,8 +9,8 @@
   "name":"obj_enterUI",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bed_Objects",
-    "path":"folders/Objects/Bed_Objects.yy",
+    "name":"Lobby_Object",
+    "path":"folders/Objects/Lobby_Object.yy",
   },
   "parentObjectId":null,
   "persistent":false,

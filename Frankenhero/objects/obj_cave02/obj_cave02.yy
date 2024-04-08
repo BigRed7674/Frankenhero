@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Object31",
+  "%Name":"obj_cave02",
   "eventList":[],
   "managed":true,
-  "name":"Object31",
+  "name":"obj_cave02",
   "overriddenProperties":[],
   "parent":{
-    "name":"Lobby_Object",
-    "path":"folders/Objects/Lobby_Object.yy",
+    "name":"Cave",
+    "path":"folders/Objects/Environment/Cave.yy",
   },
   "parentObjectId":{
     "name":"obj_wall_solid",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bookshelf",
-    "path":"sprites/spr_bookshelf/spr_bookshelf.yy",
+    "name":"spr_rock02",
+    "path":"sprites/spr_rock02/spr_rock02.yy",
   },
   "spriteMaskId":null,
   "visible":true,

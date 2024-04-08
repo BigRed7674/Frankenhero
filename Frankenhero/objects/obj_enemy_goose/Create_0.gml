@@ -16,8 +16,8 @@ wander_timer = irandom( wait_time )
 wander_distance = 200
 
 // attack state
+attack_timer = 0 // don't change this
 notice_distance = 400
-attack_timer = 0
 notice_time = 100
 attack_angle = 10
 shoot_time = 30

@@ -18,12 +18,13 @@ wander_timer = irandom( wait_time )
 wander_distance = 200
 
 // attack state
+attack_timer = 0 // don't change this
 notice_distance = 250
-attack_timer = 0
 notice_time = 100
-charge_time = 40
-attack_time = 30
-recover_time = 60
+// attacking
+charge_time = 40 // telegraphing attack
+attack_time = 30 // actually attacking
+recover_time = 60 // wait time before next action
 
 
 /*bullet_instance = noone

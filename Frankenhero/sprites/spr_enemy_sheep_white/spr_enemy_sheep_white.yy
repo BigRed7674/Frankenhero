@@ -23,7 +23,7 @@
   ],
   "name":"spr_enemy_sheep_white",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Enemy_Sprites",
     "path":"folders/Sprites/Enemy_Sprites.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":27,
-    "yorigin":32,
+    "yorigin":64,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

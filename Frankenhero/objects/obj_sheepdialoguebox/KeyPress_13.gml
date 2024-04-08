@@ -63,11 +63,11 @@ if(global.sheep_dialogue_index >= sentence_count)
 			/// @DnDAction : YoYo Games.Instances.Set_Sprite
 			/// @DnDVersion : 1
 			/// @DnDHash : 7FB3C1C2
-			/// @DnDApplyTo : {obj_sheep}
+			/// @DnDApplyTo : {obj_lobby_sheep}
 			/// @DnDParent : 7D0299B3
 			/// @DnDArgument : "spriteind" "spr_sheep"
 			/// @DnDSaveInfo : "spriteind" "spr_sheep"
-			with(obj_sheep) {
+			with(obj_lobby_sheep) {
 			sprite_index = spr_sheep;
 			image_index = 0;
 			}

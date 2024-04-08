@@ -28,6 +28,6 @@ global.level1_complete = true;
 /// @DnDAction : YoYo Games.Rooms.Go_To_Room
 /// @DnDVersion : 1
 /// @DnDHash : 095EC0FD
-/// @DnDArgument : "room" "rm_init"
-/// @DnDSaveInfo : "room" "rm_init"
-room_goto(rm_init);
+/// @DnDArgument : "room" "rm_lobby"
+/// @DnDSaveInfo : "room" "rm_lobby"
+room_goto(rm_lobby);

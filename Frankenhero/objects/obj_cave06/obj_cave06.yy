@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall03",
+  "%Name":"obj_cave06",
   "eventList":[],
   "managed":true,
-  "name":"obj_wall03",
+  "name":"obj_cave06",
   "overriddenProperties":[],
   "parent":{
-    "name":"Environment",
-    "path":"folders/Objects/Environment.yy",
+    "name":"Cave",
+    "path":"folders/Objects/Environment/Cave.yy",
   },
   "parentObjectId":{
     "name":"obj_wall_solid",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_rock02",
-    "path":"sprites/spr_rock02/spr_rock02.yy",
+    "name":"spr_rockbed_black",
+    "path":"sprites/spr_rockbed_black/spr_rockbed_black.yy",
   },
   "spriteMaskId":null,
   "visible":true,

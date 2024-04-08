@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_sheep",
+  "%Name":"obj_lobby_sheep",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_sheep",
+  "name":"obj_lobby_sheep",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bed_Objects",
-    "path":"folders/Objects/Bed_Objects.yy",
+    "name":"Lobby_Object",
+    "path":"folders/Objects/Lobby_Object.yy",
   },
   "parentObjectId":null,
   "persistent":true,

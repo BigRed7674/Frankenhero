@@ -1,4 +1,4 @@
-room_goto(rm_init);
+room_goto(rm_lobby);
 window_set_size(960,540);
 surface_resize(application_surface, 960, 540);
 

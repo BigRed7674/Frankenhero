@@ -15,8 +15,8 @@ switch(l4A8BEFE5_0)
 	/// @DnDVersion : 1
 	/// @DnDHash : 5B737100
 	/// @DnDParent : 4A8BEFE5
-	/// @DnDArgument : "const" "rm_init"
-	case rm_init:
+	/// @DnDArgument : "const" "rm_lobby"
+	case rm_lobby:
 		/// @DnDAction : YoYo Games.Common.Set_Global
 		/// @DnDVersion : 1
 		/// @DnDHash : 492A1AFB

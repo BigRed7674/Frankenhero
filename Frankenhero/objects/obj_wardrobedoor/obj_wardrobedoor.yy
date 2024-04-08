@@ -10,8 +10,8 @@
   "name":"obj_wardrobedoor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bed_Objects",
-    "path":"folders/Objects/Bed_Objects.yy",
+    "name":"zzzOLDzzz",
+    "path":"folders/Objects/zzzOLDzzz.yy",
   },
   "parentObjectId":null,
   "persistent":false,
