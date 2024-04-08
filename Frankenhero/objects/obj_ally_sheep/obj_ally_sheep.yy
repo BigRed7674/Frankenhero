@@ -1,17 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy_parent",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_ally_sheep",
+  "eventList":[],
   "managed":true,
-  "name":"obj_enemy_parent",
+  "name":"obj_ally_sheep",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Enemies.yy",
+    "name":"player_objects",
+    "path":"folders/Objects/player_objects.yy",
   },
   "parentObjectId":{
     "name":"obj_ally_enemy_parent",
@@ -34,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_ally_sheep_walking",
+    "path":"sprites/spr_ally_sheep_walking/spr_ally_sheep_walking.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

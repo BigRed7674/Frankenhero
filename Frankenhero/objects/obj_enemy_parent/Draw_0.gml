@@ -1,3 +1,6 @@
+// Inherit the parent event
+event_inherited();
+
 var _health_percent = hp / maxHp;
 var _hp_image = _health_percent*(sprite_get_number(spr_enemy_healthbar)-1);
 

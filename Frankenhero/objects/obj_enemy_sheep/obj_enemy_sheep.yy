@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_sheep",
-    "path":"sprites/spr_enemy_sheep/spr_enemy_sheep.yy",
+    "name":"spr_enemy_sheep_moving",
+    "path":"sprites/spr_enemy_sheep_moving/spr_enemy_sheep_moving.yy",
   },
   "spriteMaskId":null,
   "visible":true,
