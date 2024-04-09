@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ally_sheep",
+  "%Name":"obj_ally_parent",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ally_sheep",
+  "name":"obj_ally_parent",
   "overriddenProperties":[],
   "parent":{
     "name":"player_objects",
     "path":"folders/Objects/player_objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_ally_parent",
-    "path":"objects/obj_ally_parent/obj_ally_parent.yy",
+    "name":"obj_ally_enemy_parent",
+    "path":"objects/obj_ally_enemy_parent/obj_ally_enemy_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_ally_sheep_move",
-    "path":"sprites/spr_ally_sheep_move/spr_ally_sheep_move.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

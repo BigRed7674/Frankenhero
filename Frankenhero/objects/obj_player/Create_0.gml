@@ -10,8 +10,8 @@ y_center = y + y_center_offset;
 
 aim_dir = 0;
 
-hp = 20
 maxHp = 20
+hp = maxHp
 
 invincible = 0
 itime = 100
@@ -27,8 +27,13 @@ shoot_timer = 0
 
 // add weapons to player weapon inventory
 array_push( global.player_weapon_inventory , global.weapon_list.flashlight )
-array_push( global.player_weapon_inventory , global.weapon_list.test )
+array_push( global.player_weapon_inventory , global.weapon_list.sheep )
 
 
 selected_weapon = 0
 weapon = global.player_weapon_inventory[selected_weapon]
+
+
+
+// sidekick
+player_ally[0] = noone

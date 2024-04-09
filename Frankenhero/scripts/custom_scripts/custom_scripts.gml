@@ -11,10 +11,11 @@ function draw_flashlight()
 	var _weapon_y_scale = 1
 	if aim_dir > 90 && aim_dir < 270
 	{
-		_weapon_y_scale = -1;
+		_weapon_y_scale = -1
 	}
 
-	draw_sprite_ext(weapon.sprite, 0, x + _x_offset, y_center + _y_offset, 1, _weapon_y_scale, aim_dir, image_blend, image_alpha );
+	draw_sprite_ext(weapon.sprite, 0, x + _x_offset, y_center + _y_offset,
+		1 , _weapon_y_scale, aim_dir, image_blend, image_alpha );
 
 
 }

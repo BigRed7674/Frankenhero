@@ -38,5 +38,7 @@ if hit_confirm == true && player_destroy == true { destroy = true; };
 if destroy = true { instance_destroy() }
 // wall collision
 if place_meeting( x , y , obj_wall_solid ) { destroy = true }
+// ally collision
+if place_meeting( x , y , obj_ally_parent ) { destroy = true }
 // player collision
-//if place_meeting( x , y , obj_player ) && player_destroy = true { destroy = true }
+if place_meeting( x , y , obj_player ) && player_destroy = true { destroy = true }

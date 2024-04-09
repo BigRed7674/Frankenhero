@@ -13,27 +13,27 @@ var _swap_key_pressed = mouse_check_button_pressed( mb_right )
 //player movement
 #region
 	//get the direction
-	var _horiz_key = _right_key - _left_key;
-	var _vert_key = _down_key - _up_key;
-	move_dir = point_direction(0, 0, _horiz_key, _vert_key);
+	var _horiz_key = _right_key - _left_key
+	var _vert_key = _down_key - _up_key
+	move_dir = point_direction(0, 0, _horiz_key, _vert_key)
 	
 	//get x,y speed
 	var _speed = 0;
-	var _input_level = point_distance(0, 0, _horiz_key, _vert_key);
-	_input_level = clamp(_input_level, 0, 1);
-	_speed = move_speed * _input_level;
+	var _input_level = point_distance(0, 0, _horiz_key, _vert_key)
+	_input_level = clamp(_input_level, 0, 1)
+	_speed = move_speed * _input_level
 	
-	x_speed = lengthdir_x(_speed, move_dir);
-	y_speed = lengthdir_y(_speed, move_dir);
+	x_speed = lengthdir_x(_speed, move_dir)
+	y_speed = lengthdir_y(_speed, move_dir)
 	
 	//collision
 	if place_meeting( x + x_speed , y , obj_wall )
 	{
-		x_speed = 0;
+		x_speed = 0
 	}
 	if place_meeting( x , y + y_speed , obj_wall )
 	{
-		y_speed = 0;
+		y_speed = 0
 	}
 
 		
@@ -82,29 +82,51 @@ if _swap_key_pressed
 #region
 if shoot_timer > 0 { shoot_timer -- }
 
-if (_shoot_key && shoot_timer <= 0) && room_get_name(room) == "rm_sheep"
+if (_shoot_key && shoot_timer <= 0)
 {
-	// reset the timer
-	shoot_timer = weapon.cooldown
+	// flashlight
+	if room_get_name(room) == "rm_sheep"
+	{
+		// reset the timer
+		shoot_timer = weapon.cooldown
 	
-	// create the bullet
-	var _x_offset = lengthdir_x( weapon.length + weapon.offset_distance, aim_dir )
-	var _y_offset = lengthdir_y( weapon.length + weapon.offset_distance, aim_dir )
+		// create the bullet
+		var _x_offset = lengthdir_x( weapon.length + weapon.offset_distance, aim_dir )
+		var _y_offset = lengthdir_y( weapon.length + weapon.offset_distance, aim_dir )
 
 	
-	var _spread = weapon.spread
-	var _spread_div = _spread / max( 1 , weapon.bullet_num - 1 )
+		var _spread = weapon.spread
+		var _spread_div = _spread / max( 1 , weapon.bullet_num - 1 )
 	
-	// create the correct number of bullets
-	for ( var _num = 0 ; _num < weapon.bullet_num ; _num++ )
-	{
-		var _bullet_instance = instance_create_depth( x + _x_offset , y_center + _y_offset , depth-100 , weapon.bullet_object )
-	
-		// change the direction
-		with( _bullet_instance )
+		// create the correct number of bullets
+		for ( var _num = 0 ; _num < weapon.bullet_num ; _num++ )
 		{
-			dir = other.aim_dir - _spread/2 + _spread_div*_num
+			var _bullet_instance = instance_create_depth( x + _x_offset , y_center + _y_offset , depth-100 , weapon.bullet_object )
+	
+			// change the direction
+			with( _bullet_instance )
+			{
+				dir = other.aim_dir - _spread/2 + _spread_div*_num
+			}
 		}
+	}
+	// ally sheep
+	if room_get_name(room) == "rm_test"
+	{
+		// reset the timer
+		shoot_timer = 1
+	
+		if instance_exists(player_ally[0])
+		{
+			if ( player_ally[0].state = "following" )
+			{
+				player_ally[0].state = "attacking"
+				player_ally[0].move_x = mouse_x
+				player_ally[0].move_y = mouse_y
+				player_ally[0].dir = aim_dir
+			}
+		}
+
 	}
 }
 #endregion
