@@ -3,7 +3,7 @@ var _camY = camera_get_view_y(view_camera[0]);
 var _border = 8;
 var _spr_pos_x = _camX + _border;
 var _spr_pos_y = _camY + _border;
-if room_get_name(room) != "rm_init"
+if room_get_name(room) != "rm_lobby"
 {
 	draw_sprite(spr_HUD_logo, 0, _spr_pos_x, _spr_pos_y);
 	for (var i=0; i < playerMaxHp; i++)

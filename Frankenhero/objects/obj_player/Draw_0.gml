@@ -1,15 +1,8 @@
 //Draw Player
 draw_self();
 
-if room_get_name(room) != "rm_init" {
-
-	//draw HP as number
-	draw_text(x, y, string(hp));
-}
-
 // first level
-if room_get_name(room) == "rm_init"
-|| room_get_name(room) == "rm_sheep"
+if room_get_name(room) == "rm_sheep"
 {
 	//Draw the Flashlight
 	draw_flashlight()
