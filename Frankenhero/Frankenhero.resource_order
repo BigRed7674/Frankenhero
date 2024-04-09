@@ -74,6 +74,7 @@
     {"name":"Object33","order":2,"path":"objects/Object33/Object33.yy",},
     {"name":"Object34","order":3,"path":"objects/Object34/Object34.yy",},
     {"name":"Object37","order":6,"path":"objects/Object37/Object37.yy",},
+    {"name":"obj_effects_manager","order":7,"path":"objects/obj_effects_manager/obj_effects_manager.yy",},
     {"name":"rm_lobby","order":2,"path":"rooms/rm_lobby/rm_lobby.yy",},
     {"name":"rm_test","order":4,"path":"rooms/rm_test/rm_test.yy",},
     {"name":"sc_copylist","order":2,"path":"scripts/sc_copylist/sc_copylist.yy",},
@@ -104,6 +105,7 @@
     {"name":"spr_enterUI","order":14,"path":"sprites/spr_enterUI/spr_enterUI.yy",},
     {"name":"spr_EthanDialogue","order":15,"path":"sprites/spr_EthanDialogue/spr_EthanDialogue.yy",},
     {"name":"spr_flashlight","order":4,"path":"sprites/spr_flashlight/spr_flashlight.yy",},
+    {"name":"spr_HUD_objectives","order":1,"path":"sprites/spr_HUD_objectives/spr_HUD_objectives.yy",},
     {"name":"spr_invisible_wall","order":4,"path":"sprites/spr_invisible_wall/spr_invisible_wall.yy",},
     {"name":"spr_player_1","order":6,"path":"sprites/spr_player_1/spr_player_1.yy",},
     {"name":"spr_player_left","order":1,"path":"sprites/spr_player_left/spr_player_left.yy",},
@@ -132,6 +134,5 @@
     {"name":"spr_wall01","order":6,"path":"sprites/spr_wall01/spr_wall01.yy",},
     {"name":"spr_wall02","order":7,"path":"sprites/spr_wall02/spr_wall02.yy",},
     {"name":"spr_window","order":4,"path":"sprites/spr_window/spr_window.yy",},
-    {"name":"spr_HUD_objectives","order":1,"path":"sprites/spr_HUD_objectives/spr_HUD_objectives.yy",},
   ],
 }

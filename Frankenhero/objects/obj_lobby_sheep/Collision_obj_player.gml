@@ -18,8 +18,9 @@ if(global.dialogue_started == false)
 	/// @DnDHash : 10279C35
 	/// @DnDParent : 45CDF479
 	/// @DnDArgument : "soundid" "snd_baa_1"
+	/// @DnDArgument : "gain" ".25"
 	/// @DnDSaveInfo : "soundid" "snd_baa_1"
-	audio_play_sound(snd_baa_1, 0, 0, 1.0, undefined, 1.0);
+	audio_play_sound(snd_baa_1, 0, 0, .25, undefined, 1.0);
 
 	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1

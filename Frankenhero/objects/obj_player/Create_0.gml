@@ -27,7 +27,7 @@ shoot_timer = 0
 
 // add weapons to player weapon inventory
 array_push( global.player_weapon_inventory , global.weapon_list.flashlight )
-array_push( global.player_weapon_inventory , global.weapon_list.sheep )
+//array_push( global.player_weapon_inventory , global.weapon_list.sheep )
 
 
 selected_weapon = 0

@@ -22,7 +22,7 @@ global.weapon_list =
 	sprite_get_bbox_right( spr_flashlight ) * 2, 20,
 	obj_bullet_flashlight, 1 , 5 , 45 ),
 	
-	sheep : new CreateWeapon( spr_ally_sheep_move ,
+	/*sheep : new CreateWeapon( spr_ally_sheep_move ,
 	sprite_get_bbox_right( spr_ally_sheep_move ) - sprite_get_xoffset( spr_ally_sheep_move ), 10,
-	spr_ally_sheep_move, 20 , 1 , 0 )
+	spr_ally_sheep_move, 20 , 1 , 0 )*/
 }
