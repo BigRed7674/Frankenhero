@@ -16,7 +16,7 @@ if room_get_name(room) == "rm_lobby"
 }	
 
 //Draw for Levels
-if room_get_name(room) != "rm_lobby"
+if room_get_name(room) == "rm_sheep"
 {
 	draw_sprite(spr_HUD_objectives, 2, _spr_x_pos, _spr_y_pos_levels);
 }

@@ -5,15 +5,14 @@ draw_self();
 if room_get_name(room) == "rm_sheep"
 {
 	//Draw the Flashlight
-	draw_flashlight()
-	/* aim_dir >= 180 && aim_dir <= 360 {
-		draw_flashlight(); //This code is in custom_scripts
-	}
-
-	//draw flashlight behind player
 	if aim_dir >= 0 && aim_dir < 180 {
 		draw_flashlight();
-	}*/
+	}
+	draw_self();
+	//draw flashlight behind player
+		if aim_dir >= 180 && aim_dir <= 360 {
+		draw_flashlight(); //This code is in custom_scripts
+	}
 }
 
 // second level
