@@ -84,7 +84,7 @@ if shoot_timer > 0 { shoot_timer -- }
 
 if (_shoot_key && shoot_timer <= 0)
 {
-	// flashlight
+	// flashlight bullet
 	if room_get_name(room) == "rm_sheep"
 	{
 		// reset the timer

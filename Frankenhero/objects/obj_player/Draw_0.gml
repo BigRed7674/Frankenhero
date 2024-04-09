@@ -7,6 +7,7 @@ if room_get_name(room) != "rm_init" {
 	draw_text(x, y, string(hp));
 }
 
+// first level
 if room_get_name(room) == "rm_init"
 || room_get_name(room) == "rm_sheep"
 {
@@ -22,6 +23,7 @@ if room_get_name(room) == "rm_init"
 	}*/
 }
 
+// second level
 if room_get_name(room) == "rm_test" {
 	//Draw the Ally Sheep
 	if !instance_exists( player_ally[0] )
