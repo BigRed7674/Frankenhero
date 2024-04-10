@@ -12,6 +12,13 @@ global.dialogue_case = "lobby2";
 /// @DnDArgument : "var" "level1_complete"
 global.level1_complete = true;
 
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1.1
+/// @DnDHash : 5BC387F7
+/// @DnDArgument : "soundid" "snd_switch_1"
+/// @DnDSaveInfo : "soundid" "snd_switch_1"
+audio_play_sound(snd_switch_1, 0, 0, 1.0, undefined, 1.0);
+
 /// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1
 /// @DnDHash : 4CBBFD6F

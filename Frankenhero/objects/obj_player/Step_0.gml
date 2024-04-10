@@ -97,6 +97,7 @@ if (_shoot_key && shoot_timer <= 0)
 {
 	// flashlight bullet
 	if room_get_name(room) == "rm_sheep"
+	
 	{
 		// reset the timer
 		shoot_timer = weapon.cooldown
@@ -108,7 +109,7 @@ if (_shoot_key && shoot_timer <= 0)
 	
 		var _spread = weapon.spread
 		var _spread_div = _spread / max( 1 , weapon.bullet_num - 1 )
-	
+		
 		// create the correct number of bullets
 		for ( var _num = 0 ; _num < weapon.bullet_num ; _num++ )
 		{
