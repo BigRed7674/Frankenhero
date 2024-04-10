@@ -26,7 +26,7 @@ if(global.dialogue_started == false)
 	/// @DnDVersion : 1
 	/// @DnDHash : 58683FC9
 	/// @DnDParent : 45CDF479
-	/// @DnDArgument : "objectid" "obj_sheepdialoguebox"
-	/// @DnDSaveInfo : "objectid" "obj_sheepdialoguebox"
-	instance_create_layer(0, 0, "Instances", obj_sheepdialoguebox);
+	/// @DnDArgument : "objectid" "obj_dialogue"
+	/// @DnDSaveInfo : "objectid" "obj_dialogue"
+	instance_create_layer(0, 0, "Instances", obj_dialogue);
 }

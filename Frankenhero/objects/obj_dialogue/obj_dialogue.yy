@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_sheepdialoguebox",
+  "%Name":"obj_dialogue",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":13,"eventType":9,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":32,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_sheepdialoguebox",
+  "name":"obj_dialogue",
   "overriddenProperties":[],
   "parent":{
     "name":"Lobby_Object",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_sheepdialoguebox",
-    "path":"sprites/spr_sheepdialoguebox/spr_sheepdialoguebox.yy",
+    "name":"spr_dialogue_sheep",
+    "path":"sprites/spr_dialogue_sheep/spr_dialogue_sheep.yy",
   },
   "spriteMaskId":null,
   "visible":true,

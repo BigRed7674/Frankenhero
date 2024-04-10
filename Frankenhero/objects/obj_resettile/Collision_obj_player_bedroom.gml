@@ -27,7 +27,7 @@ global.computer_frame = 0;
 /// @DnDVersion : 1
 /// @DnDHash : 08D0E852
 /// @DnDApplyTo : {obj_sheepdialoguebox}
-with(obj_sheepdialoguebox) instance_destroy();
+with(obj_dialogue) instance_destroy();
 
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1

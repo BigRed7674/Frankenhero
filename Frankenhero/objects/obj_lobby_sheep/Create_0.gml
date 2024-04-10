@@ -22,9 +22,9 @@ global.dialogue_started = false;
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
 /// @DnDHash : 6455CED1
-/// @DnDArgument : "value" "1"
+/// @DnDArgument : "value" ""lobby1""
 /// @DnDArgument : "var" "current_case"
-global.current_case = 1;
+global.current_case = "lobby1";
 
 /// @DnDAction : YoYo Games.Rooms.Get_Current_Room
 /// @DnDVersion : 1

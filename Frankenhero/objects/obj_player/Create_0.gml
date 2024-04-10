@@ -10,8 +10,8 @@ y_center = y + y_center_offset;
 
 aim_dir = 0;
 
-maxHp = 20
-hp = maxHp
+max_hp = 2
+hp = max_hp
 
 invincible = 0
 itime = 100

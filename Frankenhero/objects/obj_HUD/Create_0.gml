@@ -2,5 +2,5 @@
 depth = -9000;
 
 //keep track of player health
-playerHp = 0;
-playerMaxHp = 0;
+player_hp = 0;
+player_max_hp = 0;

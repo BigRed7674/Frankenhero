@@ -7,16 +7,10 @@ global.dialogue_started = false;
 
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
-/// @DnDHash : 46106051
-/// @DnDArgument : "value" "global.dialogue_started"
-global.variable = global.dialogue_started;
-
-/// @DnDAction : YoYo Games.Common.Set_Global
-/// @DnDVersion : 1
 /// @DnDHash : 7E6AC089
-/// @DnDArgument : "value" "3"
+/// @DnDArgument : "value" ""lobby2""
 /// @DnDArgument : "var" "global.current_case"
-global.current_case = 3;
+global.current_case = "lobby2";
 
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
