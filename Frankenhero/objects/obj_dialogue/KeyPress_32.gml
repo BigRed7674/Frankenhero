@@ -8,12 +8,12 @@ if(dialogue_index >= dialogue_length)
 	switch(global.dialogue_case)
 	{
 		case "lobby1":
-			room_goto(rm_sheep);
+			room_goto(rm_sheep)
 			break;
 	
 		case "lobby2":
-			layer_sequence_create("Sequences", 240, 240, seq_fade);
-			room_instance_clear(room)
+			layer_sequence_create("Sequences", 0, 0, seq_fade);
+			room_goto(rm_credits)
 			break;
 	}
 }
@@ -30,7 +30,6 @@ if(!(dialogue_index >= dialogue_length))
 			with(obj_dialogue) {
 			sprite_index = spr_dialogue_player
 			}
-			current_x = -220
 			break
 		
 		// Sheepa
@@ -49,7 +48,6 @@ if(!(dialogue_index >= dialogue_length))
 			with(obj_dialogue) {
 			sprite_index = spr_dialogue_sheep
 			}
-			current_x = -80
 			break
 	
 		// Dark Sheepa

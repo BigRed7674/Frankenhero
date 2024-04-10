@@ -111,7 +111,8 @@ if (_shoot_key && shoot_timer <= 0)
 		}
 	}
 	// ally sheep
-	if room_get_name(room) == "rm_test"
+	if room_get_name(room) == "rm_credits"
+	|| room_get_name(room) == "rm_test"
 	{
 		// reset the timer
 		shoot_timer = 1

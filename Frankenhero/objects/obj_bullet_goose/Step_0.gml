@@ -26,7 +26,7 @@ switch( state )
 
 // cleanup
 // out of room bounds
-var _pad = 16
+var _pad = 10000
 if bbox_right < -_pad || bbox_left > room_width + _pad ||
 bbox_bottom < -_pad || bbox_top > room_height + _pad
 {
