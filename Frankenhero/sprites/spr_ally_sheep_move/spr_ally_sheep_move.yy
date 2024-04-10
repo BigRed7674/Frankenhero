@@ -26,7 +26,7 @@
   ],
   "name":"spr_ally_sheep_move",
   "nineSlice":null,
-  "origin":7,
+  "origin":4,
   "parent":{
     "name":"Player_Sprites",
     "path":"folders/Sprites/Player_Sprites.yy",
@@ -88,7 +88,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":27,
-    "yorigin":64,
+    "yorigin":32,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

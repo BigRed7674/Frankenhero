@@ -1,0 +1,30 @@
+current_y = camera_get_view_height(view_camera[0]) + 500
+
+credits_scale = [4,1,1,1,
+				3,1,1,
+				2,1,
+				2,1,
+				2,1,
+				2,1,
+				2,1,
+				2,1]
+credits = ds_list_create()
+ds_list_add(credits,
+"FRANKENHERO",
+"",
+"",
+"",
+"a game made by",
+"",
+"",
+"Daniel",
+"",
+"JJ",
+"",
+"Neal",
+"",
+"Travis",
+"",
+"Stacy",
+"",
+"Yixi")

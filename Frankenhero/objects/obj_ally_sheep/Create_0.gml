@@ -4,8 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
-attack_spd = 5
-return_spd = 4
+attack_spd = 10
+return_spd = 5
 
 
 move_x = 0
@@ -15,3 +15,7 @@ state = "following"
 
 // drawing
 scale = 0.6
+
+timer = 0
+attack_time = 120
+return_time = 100

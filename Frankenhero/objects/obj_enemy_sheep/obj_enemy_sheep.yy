@@ -38,6 +38,9 @@
     "name":"spr_enemy_sheep_move",
     "path":"sprites/spr_enemy_sheep_move/spr_enemy_sheep_move.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_enemy_sheep",
+    "path":"sprites/spr_enemy_sheep/spr_enemy_sheep.yy",
+  },
   "visible":true,
 }

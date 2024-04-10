@@ -12,6 +12,14 @@ global.dialogue_case = "lobby2";
 /// @DnDArgument : "var" "level1_complete"
 global.level1_complete = true;
 
+/// @DnDAction : YoYo Games.Instances.Create_Instance
+/// @DnDVersion : 1
+/// @DnDHash : 4CBBFD6F
+/// @DnDArgument : "objectid" "obj_transition"
+/// @DnDArgument : "layer" ""Transition""
+/// @DnDSaveInfo : "objectid" "obj_transition"
+instance_create_layer(0, 0, "Transition", obj_transition);
+
 /// @DnDAction : YoYo Games.Rooms.Go_To_Room
 /// @DnDVersion : 1
 /// @DnDHash : 095EC0FD

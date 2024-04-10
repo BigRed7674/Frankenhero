@@ -4,18 +4,20 @@ audio_stop_all();
 
 if(dialogue_index >= dialogue_length)
 {
+	var _next_level
 	global.dialogue_started = false
 	switch(global.dialogue_case)
 	{
 		case "lobby1":
-			room_goto(rm_sheep)
-			break;
+			_next_level = rm_sheep
+			break
 	
 		case "lobby2":
-			layer_sequence_create("Sequences", 0, 0, seq_fade);
-			room_goto(rm_credits)
-			break;
+			_next_level = rm_credits
+			break
 	}
+	instance_create_layer( 0 , 0 , "Transition" , obj_transition )
+	room_goto(_next_level)
 }
 
 if(!(dialogue_index >= dialogue_length))

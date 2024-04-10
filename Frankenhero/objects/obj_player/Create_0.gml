@@ -10,7 +10,7 @@ y_center = y + y_center_offset;
 
 aim_dir = 0;
 
-max_hp = 2
+max_hp = 20
 hp = max_hp
 
 invincible = 0

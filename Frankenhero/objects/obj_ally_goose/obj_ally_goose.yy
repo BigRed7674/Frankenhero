@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ally_sheep",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_ally_goose",
+  "eventList":[],
   "managed":true,
-  "name":"obj_ally_sheep",
+  "name":"obj_ally_goose",
   "overriddenProperties":[],
   "parent":{
     "name":"player_objects",
@@ -34,12 +31,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ally_sheep_move",
-    "path":"sprites/spr_ally_sheep_move/spr_ally_sheep_move.yy",
+    "name":"spr_ally_goose_move",
+    "path":"sprites/spr_ally_goose_move/spr_ally_goose_move.yy",
   },
   "spriteMaskId":{
-    "name":"spr_enemy_sheep",
-    "path":"sprites/spr_enemy_sheep/spr_enemy_sheep.yy",
+    "name":"spr_enemy_goose_move",
+    "path":"sprites/spr_enemy_goose_move/spr_enemy_goose_move.yy",
   },
   "visible":true,
 }

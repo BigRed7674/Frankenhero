@@ -3,4 +3,4 @@
 /// @DnDHash : 6D7A3F5D
 /// @DnDArgument : "font" "PixelFont"
 /// @DnDSaveInfo : "font" "PixelFont"
-draw_set_font(PixelFont);
+draw_set_font(fnt_pixel);
