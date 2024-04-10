@@ -1,6 +1,8 @@
-// audio
-current_sound = 0
-gain = 0.2
+// set case
+if global.level1_complete == true
+{
+	global.dialogue_case = "lobby2"
+}
 
 // set up dialogue
 dialogue_index = 0
@@ -19,7 +21,10 @@ current_x = -80
 3 = Honkster
 */
 
+sprite_indexes = [ spr_dialogue_player, spr_dialogue_sheep ]
+
 // Game Start
+
 
 // Lobby 1
 lobby1_character = [1,0,1,0,1,1,0,1,1,1,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0]
@@ -76,9 +81,12 @@ ds_list_add(dialogue_lobby2,
 
 
 // Select Dialogue
-var _state = global.current_case
-switch(_state)
+switch(global.dialogue_case)
 {
+	case "start":
+	
+	
+	
 	case "lobby1":
 		ds_list_copy(current_dialogue, dialogue_lobby1);
 		current_character = lobby1_character;
@@ -97,3 +105,17 @@ switch(_state)
 }
 
 dialogue_length = ds_list_size(current_dialogue);
+
+// audio
+current_sound = 0
+gain = 0.2
+switch(current_sound)
+			{
+				case 0:
+					audio_play_sound(snd_baa_1, 0, 0, gain)
+					break;
+			
+				case 1:
+					audio_play_sound(snd_baa_2, 0, 0, gain)
+					break;
+			}

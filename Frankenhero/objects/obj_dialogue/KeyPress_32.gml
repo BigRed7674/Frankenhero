@@ -1,37 +1,19 @@
 audio_stop_all();
 
 
+
 if(dialogue_index >= dialogue_length)
 {
-	instance_destroy();
-
-	var _state = global.current_case;
-	switch(_state)
+	global.dialogue_started = false
+	switch(global.dialogue_case)
 	{
 		case "lobby1":
 			room_goto(rm_sheep);
 			break;
 	
-		case 2:
-			with(obj_lobby_sheep) {
-			sprite_index = spr_sheep_bedroom;
-			image_index = 0;
-			}
-		
-			with(obj_player) {
-			x = 400;
-			}
-		
-			with(obj_player) {
-			y = 240;
-			}
-		
-		
-			global.level1_complete = true;
-			break;
-	
 		case "lobby2":
-			layer_sequence_create("Fade", 240, 240, seq_fade);
+			layer_sequence_create("Sequences", 240, 240, seq_fade);
+			room_instance_clear(room)
 			break;
 	}
 }

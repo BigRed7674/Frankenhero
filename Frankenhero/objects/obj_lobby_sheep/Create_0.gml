@@ -5,27 +5,6 @@
 /// @DnDSaveInfo : "font" "PixelFont"
 draw_set_font(PixelFont);
 
-/// @DnDAction : YoYo Games.Common.Set_Global
-/// @DnDVersion : 1
-/// @DnDHash : 68BBDB6E
-/// @DnDArgument : "value" "false"
-/// @DnDArgument : "var" "global.level1_complete"
-global.level1_complete = false;
-
-/// @DnDAction : YoYo Games.Common.Set_Global
-/// @DnDVersion : 1
-/// @DnDHash : 4FE91C5E
-/// @DnDArgument : "value" "false"
-/// @DnDArgument : "var" "dialogue_started"
-global.dialogue_started = false;
-
-/// @DnDAction : YoYo Games.Common.Set_Global
-/// @DnDVersion : 1
-/// @DnDHash : 6455CED1
-/// @DnDArgument : "value" ""lobby1""
-/// @DnDArgument : "var" "current_case"
-global.current_case = "lobby1";
-
 /// @DnDAction : YoYo Games.Rooms.Get_Current_Room
 /// @DnDVersion : 1
 /// @DnDHash : 7117CA44
