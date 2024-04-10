@@ -100,6 +100,8 @@ switch( state )
 			state = "attack"
 			sprite_index = sheep_sprite[0]
 			image_index = 0
+			//For Daniel: Enemy attacking sound
+			audio_play_sound(snd_enemy_attack, 0, false);
 		}
 		
 	break

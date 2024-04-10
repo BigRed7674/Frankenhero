@@ -12,6 +12,7 @@ var _swap_key_pressed = mouse_check_button_pressed( mb_right )
 
 //player movement
 #region
+	
 	//get the direction
 	var _horiz_key = _right_key - _left_key
 	var _vert_key = _down_key - _up_key
@@ -35,8 +36,17 @@ var _swap_key_pressed = mouse_check_button_pressed( mb_right )
 	{
 		y_speed = 0
 	}
-
-		
+	if (x_speed != 0 || y_speed != 0)
+	{
+		walking_count += 1;
+		if walking_count == 15
+		{
+			walking_count = 0;
+			audio_play_sound(snd_walking, 0, false);
+		}
+	} else {
+		walking_count = 0;
+	}	
 	//Move the Player
 	x += x_speed;
 	y += y_speed;
@@ -62,6 +72,7 @@ var _swap_key_pressed = mouse_check_button_pressed( mb_right )
 	//set player sprites
 	mask_index = player_sprite[3];
 	sprite_index = player_sprite[face];
+	
 #endregion
 
 // weapon swapping
@@ -109,6 +120,7 @@ if (_shoot_key && shoot_timer <= 0)
 				dir = other.aim_dir - _spread/2 + _spread_div*_num
 			}
 		}
+		audio_play_sound(snd_flashlight, 0, false);
 	}
 	// ally sheep
 	if room_get_name(room) == "rm_credits"

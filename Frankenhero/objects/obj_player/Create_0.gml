@@ -8,6 +8,8 @@ y_speed= 0;
 y_center_offset = -30;
 y_center = y + y_center_offset;
 
+walking_count = 0;
+
 aim_dir = 0;
 
 max_hp = 20
