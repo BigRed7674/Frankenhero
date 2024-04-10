@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_flashlight",
+  "%Name":"snd_switch_1",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.03125,
-  "name":"snd_flashlight",
+  "duration":0.122104,
+  "name":"snd_switch_1",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_flashlight.wav",
+  "soundFile":"snd_switch_1.wav",
   "type":0,
-  "volume":0.1,
+  "volume":1.0,
 }
