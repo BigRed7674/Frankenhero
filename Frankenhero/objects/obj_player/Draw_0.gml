@@ -35,8 +35,8 @@ if variable_global_exists("level1_complete")
 var _xscale = 6
 var _yscale = 6
 image_alpha = 1
-
 if room_get_name(room) == "rm_sheep"{
 layer = layer_get_id("GUI")
 draw_sprite_ext( spr_darkmist , image_index ,
 		x-50 , y-50 , _xscale , _yscale , 0 , image_blend, image_alpha )}
+		

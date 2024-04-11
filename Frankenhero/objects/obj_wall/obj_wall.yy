@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Environment",
-    "path":"folders/Objects/Environment.yy",
+    "path":"folders/Objects/Enemies/Environment.yy",
   },
   "parentObjectId":null,
   "persistent":false,
