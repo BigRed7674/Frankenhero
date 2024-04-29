@@ -1,6 +1,6 @@
 //Movement variables
 move_dir = 0;
-move_speed = 2;
+move_speed = 2.5;
 x_speed = 0;
 y_speed= 0;
 
@@ -12,7 +12,7 @@ walking_count = 0;
 
 aim_dir = 0;
 
-max_hp = 20
+max_hp = 6
 hp = max_hp
 
 invincible = 0
