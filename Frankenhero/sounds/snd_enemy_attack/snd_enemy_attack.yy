@@ -12,8 +12,8 @@
   "duration":1.06746,
   "name":"snd_enemy_attack",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"snd",
+    "path":"folders/Sounds/snd.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

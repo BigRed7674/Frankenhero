@@ -12,8 +12,8 @@
   "duration":3.770437,
   "name":"snd_baa_1",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"snd",
+    "path":"folders/Sounds/snd.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

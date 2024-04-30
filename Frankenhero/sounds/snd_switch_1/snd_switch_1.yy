@@ -12,8 +12,8 @@
   "duration":0.122104,
   "name":"snd_switch_1",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"snd",
+    "path":"folders/Sounds/snd.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

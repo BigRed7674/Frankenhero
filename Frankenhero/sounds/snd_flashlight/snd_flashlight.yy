@@ -12,8 +12,8 @@
   "duration":2.03125,
   "name":"snd_flashlight",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"snd",
+    "path":"folders/Sounds/snd.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
