@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lobby_bed",
+  "%Name":"obj_pg",
   "eventList":[],
   "managed":true,
-  "name":"obj_lobby_bed",
+  "name":"obj_pg",
   "overriddenProperties":[],
   "parent":{
-    "name":"Lobby_Object",
-    "path":"folders/Objects/Lobby_Object.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_wall_solid",
@@ -31,12 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bed",
-    "path":"sprites/spr_bed/spr_bed.yy",
+    "name":"spr_collider",
+    "path":"sprites/spr_collider/spr_collider.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_bed",
-    "path":"sprites/spr_bed/spr_bed.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
