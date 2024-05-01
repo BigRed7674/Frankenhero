@@ -2,6 +2,12 @@
 if global.level1_complete == true
 {
 	global.dialogue_case = "lobby2"
+	if global.level2_start == true{
+		global.dialogue_case = "lobby3"
+		if global.level2_complete == true{
+			global.dialogue_case = "lobby4"
+		}
+	}
 }
 
 // set up dialogue
@@ -21,7 +27,7 @@ current_x = 0
 3 = Honkster
 */
 
-sprite_indexes = [ spr_dialogue_player, spr_dialogue_sheep ]
+sprite_indexes = [ spr_dialogue_player, spr_dialogue_sheep, spr_dialogue_bad_sheep,spr_dialogue_bad_goose, spr_dialogue_good_goose ]
 
 // Game Start
 
@@ -49,17 +55,43 @@ ds_list_add(dialogue_level1,
 "You are right Ethan. \n I am glad  \nyou are not afraid anymore")*/
 
 // Lobby 2
-lobby2_character = [0,1,0,1,0,1,0]
+lobby2_character = [2,0,1,0,0,0,1,0]
 dialogue_lobby2 = ds_list_create()
 ds_list_add(dialogue_lobby2,
-"Oh hey Sheepa,\nturns out it's just you in my closet!",
-"Ethan, were you afraid in the dark?",
-"I always feel like something\nis hiding in the dark...",
-"But you made it.\nAre you still afraid?",
-"I guess you're right.\nI'm not afraid anymore!",
+"Awwww I am the darkness!",
+"Oh Sheepa\nit's just you in my closet!",
+"Ethan, you are right, it is just me!",
+"I always feel like something\nis hiding in the dark.",
+"But now I realized that these are all my imaginations",
+"I'm not afraid anymore!",
 "Good job being brave,\nI knew you could do it Ethan!!",
 "I'm ready for another adventure!!!")
 
+// Lobby 3
+lobby3_character = [0,1,0,3,1,1,1,4]
+dialogue_lobby3 = ds_list_create()
+ds_list_add(dialogue_lobby3,
+"Sheepa, I don't know if I can deal with the next thing in my diary.",
+"What's the matter, Ethan?",
+"Am I too short? Too ugly? Too weird?",
+"Yes!You are!",
+"That is mean!",
+"Listen Ethan, Sometimes kids are mean, but we can always find good friends.",
+"For example...Honkster!",
+"Come back to the playground and find me!")
+
+// Lobby 4
+lobby4_character = [1,0,1,0,0,4,1,0]
+dialogue_lobby4 = ds_list_create()
+ds_list_add(dialogue_lobby4,
+"Welcome back Ethan!",
+"That was really a wild goose chase!",
+"But you did find somebody, didn’t you?",
+"Yes!",
+"This is my new friend, Honkster! /nHonkster, this is Sheepa!",
+"Nice to meet you Sheepa, you look so puffy!",
+"Thank you Honkster, your long neck looks so adorable!",
+"Great, I have two best friends now!")
 
 // Select Dialogue
 switch(global.dialogue_case)
@@ -83,6 +115,19 @@ switch(global.dialogue_case)
 	
 		current_character = lobby2_character;
 		break;
+		
+	case "lobby3":
+		ds_list_copy(current_dialogue, dialogue_lobby3);
+	
+		current_character = lobby3_character;
+		break;
+		
+	case "lobby4":
+		ds_list_copy(current_dialogue, dialogue_lobby4);
+	
+		current_character = lobby4_character;
+		break;
+	
 }
 
 dialogue_length = ds_list_size(current_dialogue);

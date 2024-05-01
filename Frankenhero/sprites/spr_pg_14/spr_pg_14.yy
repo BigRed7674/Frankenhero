@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"spr_pg_14",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":159,
   "bbox_left":0,
   "bbox_right":293,
-  "bbox_top":46,
+  "bbox_top":99,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

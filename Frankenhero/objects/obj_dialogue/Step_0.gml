@@ -8,12 +8,24 @@ if(dialogue_index >= dialogue_length)
 	global.dialogue_started = false
 	switch(global.dialogue_case)
 	{
+		case "lobby4":
+			_next_level = rm_credits
+			break
+			
 		case "lobby1":
 			_next_level = rm_sheep
 			break
 	
 		case "lobby2":
-			_next_level = rm_credits
+			_next_level = rm_lobby
+			instance_create_layer(0,0,"GUI",obj_transition)
+			//global.level2_complete = false;
+			global.level2_start = true;
+			global.dialogue_case="lobby3"
+			break
+			
+	    case "lobby3":
+			_next_level = rm_geese
 			break
 	}
 	instance_create_layer( 0 , 0 , "Transition" , obj_transition )
@@ -55,6 +67,18 @@ if(!(dialogue_index >= dialogue_length))
 		// Dark Sheepa
 		case 2:
 			current_sound = irandom(1)
+			sprite_index = spr_dialogue_bad_sheep
+			break
+		
+		// Bad Goose
+		case 3:
+			current_sound = irandom(1)
+			sprite_index = spr_dialogue_bad_goose
+			break
+		//Good Goose
+		case 4:
+			current_sound = irandom(1)
+			sprite_index = spr_dialogue_good_goose
 			break
 	}
 

@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pg",
-  "eventList":[],
+  "%Name":"obj_pg_1",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_pg",
+  "name":"obj_pg_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Playground_Object",
+    "path":"folders/Objects/Playground_Object.yy",
   },
   "parentObjectId":{
     "name":"obj_wall_solid",
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_collider",
-    "path":"sprites/spr_collider/spr_collider.yy",
+    "name":"spr_pg_1",
+    "path":"sprites/spr_pg_1/spr_pg_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -12,6 +12,20 @@ global.dialogue_case = "lobby2";
 /// @DnDArgument : "var" "level1_complete"
 global.level1_complete = true;
 
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 24441686
+/// @DnDArgument : "value" "false"
+/// @DnDArgument : "var" "global.level2_start"
+global.level2_start = false;
+
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 3CC44D43
+/// @DnDArgument : "value" "false"
+/// @DnDArgument : "var" "global.level2_complete"
+global.level2_complete = false;
+
 /// @DnDAction : YoYo Games.Audio.Play_Audio
 /// @DnDVersion : 1.1
 /// @DnDHash : 5BC387F7
