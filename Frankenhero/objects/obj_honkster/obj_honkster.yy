@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Cave",
-    "path":"folders/Objects/Enemies/Environment/Cave.yy",
+    "path":"folders/Objects/Cave.yy",
   },
   "parentObjectId":null,
   "persistent":false,
