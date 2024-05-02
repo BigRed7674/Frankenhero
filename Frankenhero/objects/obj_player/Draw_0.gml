@@ -31,12 +31,16 @@ if variable_global_exists("level1_complete")
 }
 
 
-// draw mist
+/* draw mist
 var _xscale = 6
 var _yscale = 6
-image_alpha = 1
-if room_get_name(room) == "rm_sheep"{
-layer = layer_get_id("GUI")
-draw_sprite_ext( spr_darkmist , image_index ,
-		x-50 , y-50 , _xscale , _yscale , 0 , image_blend, image_alpha )}
+if room_get_name(room) == "rm_sheep" {
+	if !instance_exists( dark_mist ) {
+		dark_mist = instance_create_layer( x , y , "GUI" , obj_darkmist )
+	}
+//layer = layer_get_id("GUI")
+//layer.depth = -100000
+//draw_sprite_ext( spr_darkmist , image_index ,
+//		x-50 , y-50 , _xscale , _yscale , 0 , image_blend, image_alpha )
+}
 		

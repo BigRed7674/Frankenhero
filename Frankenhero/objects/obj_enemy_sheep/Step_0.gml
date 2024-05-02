@@ -127,7 +127,7 @@ switch( state )
 		
 		if place_meeting( x , y , obj_bullet_flashlight)
 		{
-			spd *= 0.95
+			spd *= 0.94
 		}
 		else { spd *= 0.99 }
 		// recover and return to state 0

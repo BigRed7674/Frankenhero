@@ -124,7 +124,7 @@ if (_shoot_key && shoot_timer <= 0)
 		audio_play_sound(snd_flashlight, 0, false);
 	}
 	// ally sheep
-	if room_get_name(room) == "rm_credits"
+	if room_get_name(room) == "rm_credits" || room_get_name(room) == "rm_geese"
 	{
 		// reset the timer
 		shoot_timer = 1

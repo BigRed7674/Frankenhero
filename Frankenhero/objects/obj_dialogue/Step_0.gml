@@ -4,32 +4,33 @@ if mouse_check_button_released(mb_left)  {audio_stop_all();
 
 if(dialogue_index >= dialogue_length)
 {
-	var _next_level
 	global.dialogue_started = false
 	switch(global.dialogue_case)
-	{
-		case "lobby4":
-			_next_level = rm_credits
-			break
-			
+	{			
 		case "lobby1":
-			_next_level = rm_sheep
+			global.dialogue_case = "lobby2"
+			instance_destroy()
 			break
 	
 		case "lobby2":
-			_next_level = rm_lobby
-			instance_create_layer(0,0,"GUI",obj_transition)
+			instance_create_layer( 0 , 0 , "Transition" , obj_transition )
 			//global.level2_complete = false;
 			global.level2_start = true;
 			global.dialogue_case="lobby3"
+			instance_destroy()
 			break
 			
 	    case "lobby3":
-			_next_level = rm_geese
+			global.dialogue_case = "lobby4"
+			instance_create_layer( 0 , 0 , "Transition" , obj_transition )
+			room_goto(rm_geese)
+			break
+			
+		case "lobby4":
+			instance_create_layer( 0 , 0 , "Transition" , obj_transition )
+			room_goto(rm_credits)
 			break
 	}
-	instance_create_layer( 0 , 0 , "Transition" , obj_transition )
-	room_goto(_next_level)
 }
 
 if(!(dialogue_index >= dialogue_length))

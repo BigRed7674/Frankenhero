@@ -39,3 +39,6 @@ weapon = global.player_weapon_inventory[selected_weapon]
 
 // sidekick
 player_ally[0] = noone // going to be sheep
+
+// drawing
+dark_mist = noone

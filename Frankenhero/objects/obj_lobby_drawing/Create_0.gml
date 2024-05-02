@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-dialogue = noone
-
-global.next_level = rm_lobby
+global.dialogue_case ="lobby1"
+visible = false
+mask_index = -1

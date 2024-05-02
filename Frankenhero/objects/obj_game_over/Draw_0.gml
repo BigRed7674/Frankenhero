@@ -17,7 +17,7 @@ draw_set_alpha(1);
 	var _gameOverOffset = -32;
 	var _restartOffset = 40;
 	draw_text_transformed(_camX + _camW/2, _camY + _camH/2 + _gameOverOffset, "Game Over",3,3,0);
-	draw_text_transformed(_camX + _camW/2, _camY + _camH/2 + _restartOffset,"- Click Shoot To Restart - ",1,1,0);
+	draw_text_transformed(_camX + _camW/2, _camY + _camH/2 + _restartOffset,"- Click To Restart - ",1,1,0);
 	draw_set_alpha(1);
 
 

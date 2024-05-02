@@ -5,3 +5,8 @@
 //}//}
 
 
+
+if global.shootkey {
+	instance_create_layer( 0 , 0 , "Transition" , obj_transition )
+	room_goto(rm_geese)
+}

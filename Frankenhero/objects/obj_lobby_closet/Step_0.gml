@@ -1,4 +1,6 @@
-if (place_meeting(x, y+20, obj_player)){
+if (place_meeting(x, y+20, obj_player)
+	&& !global.dialogue_started
+	&& global.dialogue_case != "lobby1"){
    image_index = 1;
    instance_create_layer(0,0,"GUI",obj_dialogue_closet_enter);
    instance_create_layer(0,0,"GUI",obj_dialogue_closet);

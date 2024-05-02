@@ -17,9 +17,6 @@ current_character = array_create(0)
 sentence = "BAAAA"
 sentence_count = 0
 
-// UI
-current_x = 0
-
 /* characters
 0 = Ethan
 1 = Sheepa
@@ -86,12 +83,12 @@ dialogue_lobby4 = ds_list_create()
 ds_list_add(dialogue_lobby4,
 "Welcome back Ethan!",
 "That was really a wild goose chase!",
-"But you did find somebody, didn’t you?",
+"But you did find somebody, didn't you?",
 "Yes!",
-"This is my new friend, Honkster! /nHonkster, this is Sheepa!",
-"Nice to meet you Sheepa, you look so puffy!",
-"Thank you Honkster, your long neck looks so adorable!",
-"Great, I have two best friends now!")
+"This is my new friend, Honkster!\nHonkster, this is Sheepa!",
+"Nice to meet you Sheepa,\nyou look so puffy!",
+"Thank you Honkster,\nyour feathers look so adorable!",
+"Great, I have two best friends now!!")
 
 // Select Dialogue
 switch(global.dialogue_case)
