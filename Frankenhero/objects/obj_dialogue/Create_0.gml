@@ -68,12 +68,12 @@ ds_list_add(dialogue_lobby2,
 lobby3_character = [0,1,0,3,1,1,1,4]
 dialogue_lobby3 = ds_list_create()
 ds_list_add(dialogue_lobby3,
-"Sheepa, I don't know if I can deal with the next thing in my diary.",
+"Sheepa, I don't know if I can deal\n with the next thing in my diary.",
 "What's the matter, Ethan?",
 "Am I too short? Too ugly? Too weird?",
 "Yes!You are!",
 "That is mean!",
-"Listen Ethan, Sometimes kids are mean, but we can always find good friends.",
+"Listen Ethan, Sometimes kids are mean,\n but we can always find good friends.",
 "For example...Honkster!",
 "Come back to the playground and find me!")
 

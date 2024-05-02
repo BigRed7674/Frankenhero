@@ -23,7 +23,8 @@ if(dialogue_index >= dialogue_length)
 	    case "lobby3":
 			instance_create_layer( 0 , 0 , "Transition" , obj_transition )
 			global.dialogue_case = "lobby4"
-			room_goto(rm_geese)
+			instance_destroy()
+			//room_goto(rm_geese)
 			break
 			
 		case "lobby4":
