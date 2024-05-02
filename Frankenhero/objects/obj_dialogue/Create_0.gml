@@ -59,7 +59,7 @@ ds_list_add(dialogue_lobby2,
 "Oh Sheepa\nit's just you in my closet!",
 "Ethan, you are right, it is just me!",
 "I always feel like something\nis hiding in the dark.",
-"But now I realized that these are all my imaginations",
+"But now I realized that these\n are all my imaginations",
 "I'm not afraid anymore!",
 "Good job being brave,\nI knew you could do it Ethan!!",
 "I'm ready for another adventure!!!")

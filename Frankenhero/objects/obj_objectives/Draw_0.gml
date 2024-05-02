@@ -12,11 +12,24 @@ var _spr_y_pos_levels = _y_border_levels + _camY;
 //Draw for Lobby
 if room_get_name(room) == "rm_lobby"
 {
-	draw_sprite(spr_HUD_objectives, 1, _spr_x_pos, _spr_y_pos_lobby);	
-}	
+	if global.dialogue_case == "lobby2" {
+		if !(global.level1_complete) {
+			draw_sprite(spr_HUD_objectives, 2, _spr_x_pos, _spr_y_pos_lobby)
+		}
+	} else if global.dialogue_case == "lobby4" and !(global.level2_complete) {
+		draw_sprite(spr_HUD_objectives, 4, _spr_x_pos, _spr_y_pos_lobby);	
+	} else {
+		draw_sprite(spr_HUD_objectives, 1, _spr_x_pos, _spr_y_pos_lobby);
+	}
+}
+
+if room_get_name(room) == "rm_geese"
+{
+	draw_sprite(spr_HUD_objectives, 5, _spr_x_pos, _spr_y_pos_levels);
+}
 
 //Draw for Levels
 if room_get_name(room) == "rm_sheep"
 {
-	draw_sprite(spr_HUD_objectives, 2, _spr_x_pos, _spr_y_pos_levels);
+	draw_sprite(spr_HUD_objectives, 3, _spr_x_pos, _spr_y_pos_levels);
 }
