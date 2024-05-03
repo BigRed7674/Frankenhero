@@ -14,14 +14,14 @@ if(dialogue_index >= dialogue_length)
 	
 		case "lobby2":
 			instance_create_layer( 0 , 0 , "Transition" , obj_transition )
-			global.dialogue_case="lobby3"
+			global.dialogue_case = "lobby3"
 			//global.level2_complete = false;
-			global.level2_start = true;
+			global.dialogue_started = true;
 			instance_destroy()
 			break
 			
 	    case "lobby3":
-			instance_create_layer( 0 , 0 , "Transition" , obj_transition )
+			//instance_create_layer( 0 , 0 , "Transition" , obj_transition )
 			global.dialogue_case = "lobby4"
 			instance_destroy()
 			//room_goto(rm_geese)
@@ -29,7 +29,9 @@ if(dialogue_index >= dialogue_length)
 			
 		case "lobby4":
 			instance_create_layer( 0 , 0 , "Transition" , obj_transition )
-			room_goto(rm_credits)
+			//room_goto(rm_credits)
+			global.dialogue_complete = true
+			instance_destroy()
 			break
 	}
 }

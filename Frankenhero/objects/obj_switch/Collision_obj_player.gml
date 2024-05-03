@@ -1,10 +1,4 @@
-global.dialogue_case = "lobby2";
-
 global.level1_complete = true;
-
-global.level2_start = false;
-
-global.level2_complete = false;
 
 audio_play_sound(snd_switch_1, 0, 0);
 

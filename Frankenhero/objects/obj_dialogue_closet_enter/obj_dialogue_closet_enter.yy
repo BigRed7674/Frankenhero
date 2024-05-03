@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_dialogue_closet_Enter",
-    "path":"sprites/spr_dialogue_closet_Enter/spr_dialogue_closet_Enter.yy",
+    "name":"spr_dialogue_closet_enter",
+    "path":"sprites/spr_dialogue_closet_enter/spr_dialogue_closet_enter.yy",
   },
   "spriteMaskId":null,
   "visible":true,

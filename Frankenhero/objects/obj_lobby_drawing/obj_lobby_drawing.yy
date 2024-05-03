@@ -12,10 +12,7 @@
     "name":"Lobby_Object",
     "path":"folders/Objects/Lobby_Object.yy",
   },
-  "parentObjectId":{
-    "name":"obj_wall_solid",
-    "path":"objects/obj_wall_solid/obj_wall_solid.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

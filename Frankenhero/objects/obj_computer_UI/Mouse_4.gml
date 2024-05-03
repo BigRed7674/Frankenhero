@@ -5,6 +5,6 @@
 }else if (global.locked)&&(point_in_rectangle(mouse_x, mouse_y,x+185, y+228,x+271,y+239)) {
 	 global.user_input = get_string_async("how many geese in the team:", "");
 	}*/
-if global.level1_complete && global.level2_complete {
+if global.level2_complete {
 	room_goto(rm_credits)
 }

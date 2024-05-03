@@ -1,5 +1,5 @@
 // set case
-if global.level1_complete == true
+/*if global.level1_complete == true
 {
 	global.dialogue_case = "lobby2"
 	if global.level2_start == true{
@@ -8,7 +8,7 @@ if global.level1_complete == true
 			global.dialogue_case = "lobby4"
 		}
 	}
-}
+}*/
 
 // set up dialogue
 dialogue_index = 0
@@ -19,8 +19,8 @@ sentence_count = 0
 
 /* characters
 0 = Ethan
-1 = Sheepa
-2 = Dark Sheepa
+1 = Sheepy
+2 = Dark Sheepy
 3 = Honkster
 */
 
@@ -30,15 +30,14 @@ sprite_indexes = [ spr_dialogue_player, spr_dialogue_sheep, spr_dialogue_bad_she
 
 
 // Lobby 1
-lobby1_character = [0,1,0,1,1,0]
+lobby1_character = [0,1,0,1,1]
 dialogue_lobby1 = ds_list_create()
 ds_list_add(dialogue_lobby1,
 "What time is it?\nI can't sleep",
 "It is almost midnight.\nLet's go back to sleep Ethan.",
 "I can't sleep.\nI'm scared of the dark...",
 "Sometimes the dark is scary,\nbut be brave.",
-"Use your flashlight to face your fears.",
-"I'll try to be brave!")
+"Use your flashlight to face your fears.")
 
 
 // Level 1 Death
@@ -48,47 +47,46 @@ ds_list_add(dialogue_level1,
 "Aoaoao I am the Darkness \nAre you afraid of me?",
 "Well not really", "You are just my imaginations",
 "If I fear you, \nyou can be the creepy nighrmares.",
-"But if I do not fear anymore, \n you can be my best friend sheepaa!",
+"But if I do not fear anymore, \n you can be my best friend Sheepya!",
 "You are right Ethan. \n I am glad  \nyou are not afraid anymore")*/
 
 // Lobby 2
-lobby2_character = [2,0,1,0,0,0,1,0]
+lobby2_character = [2,0,1,0,0,1]
 dialogue_lobby2 = ds_list_create()
 ds_list_add(dialogue_lobby2,
-"Awwww I am the darkness!",
-"Oh Sheepa\nit's just you in my closet!",
+"Baaahhh I am the darkness!!!",
+"Oh Sheepy\nit's just you in my closet!",
 "Ethan, you are right, it is just me!",
 "I always feel like something\nis hiding in the dark.",
-"But now I realized that these\n are all my imaginations",
-"I'm not afraid anymore!",
-"Good job being brave,\nI knew you could do it Ethan!!",
-"I'm ready for another adventure!!!")
+"But now I realized that it's\nall in my imagination.",
+"Good job being brave,\nI knew you could do it Ethan!!")
 
 // Lobby 3
-lobby3_character = [0,1,0,3,1,1,1,4]
+lobby3_character = [0,1,0,3,1,0,1,1,4]
 dialogue_lobby3 = ds_list_create()
 ds_list_add(dialogue_lobby3,
-"Sheepa, I don't know if I can deal\n with the next thing in my diary.",
+"Sheepy, I don't know if I can deal\nwith the next thing in my diary.",
 "What's the matter, Ethan?",
 "Am I too short? Too ugly? Too weird?",
-"Yes!You are!",
-"That is mean!",
-"Listen Ethan, Sometimes kids are mean,\n but we can always find good friends.",
-"For example...Honkster!",
+"Hahaha!! Yes! You are!!!",
+"Nonsense, who said that??",
+"That is mean,\nthat hurts my feelings...",
+"Listen Ethan, sometimes kids are mean,\nbut we can always find good friends.",
+"Like...Honkster!\nWhere is that silly goose?",
 "Come back to the playground and find me!")
 
 // Lobby 4
-lobby4_character = [1,0,1,0,0,4,1,0]
+lobby4_character = [1,0,4,1,0,4,1,0]
 dialogue_lobby4 = ds_list_create()
 ds_list_add(dialogue_lobby4,
-"Welcome back Ethan!",
-"That was really a wild goose chase!",
-"But you did find somebody, didn't you?",
-"Yes!",
-"This is my new friend, Honkster!\nHonkster, this is Sheepa!",
-"Nice to meet you Sheepa,\nyou look so puffy!",
+"Ethan we made it!\n That really was a wild goose chase!",
+"That was fun and we found Honkster!\nHonkster, this is Sheepy!",
+"Nice to meet you Sheepy,\nyou look so puffy!",
 "Thank you Honkster,\nyour feathers look so adorable!",
-"Great, I have two best friends now!!")
+"Yay, I have two best friends now!!",
+"Remember Ethan, some kids will be mean to you,\nbut you don't have to listen.",
+"Honkster is right,\ndon't let others define who you are.",
+"Thanks friends,\nI'm ready for another adventure!!!")
 
 // Select Dialogue
 switch(global.dialogue_case)

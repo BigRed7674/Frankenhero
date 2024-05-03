@@ -7,7 +7,7 @@ if instance_exists( obj_player )
 	{
 		case "following":
 			move_x = obj_player.x
-			move_y = obj_player.y
+			move_y = obj_player.y - sprite_height/4
 			if distance_to_object( obj_player ) > follow_distance
 			{
 			spd = move_spd
@@ -42,14 +42,14 @@ if instance_exists( obj_player )
 				break
 			}
 			// reaches attack destination
-			if distance_to_point( move_x , move_y ) < 20
+			if distance_to_point( move_x , move_y ) <= 1
 			{
 				state = "attack_end"
 				break
 			}
 			if timer > attack_time
 			{
-				state="attack_end"
+				state = "attack_end"
 				break
 			}
 		break
