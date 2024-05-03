@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"back_to_earth_music",
+  "%Name":"snd_back_to_earth_music",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":132.96326,
-  "name":"back_to_earth_music",
+  "name":"snd_back_to_earth_music",
   "parent":{
     "name":"Music",
     "path":"folders/Sounds/Music.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"back_to_earth_music.mp3",
+  "soundFile":"snd_back_to_earth_music.mp3",
   "type":0,
   "volume":0.1,
 }

@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"knight_music",
+  "%Name":"snd_knight_music",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":274.33795,
-  "name":"knight_music",
+  "name":"snd_knight_music",
   "parent":{
     "name":"Music",
     "path":"folders/Sounds/Music.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"knight_music.mp3",
+  "soundFile":"snd_knight_music.mp3",
   "type":0,
   "volume":0.1,
 }

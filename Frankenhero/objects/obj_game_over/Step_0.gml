@@ -1,18 +1,11 @@
-shootkey = global.shootkey;
+var _shootkey = global.shootkey;
 
 //fade in
-alpha += alphaspeed;
+alpha += alpha_speed;
 alpha = clamp(alpha,0,1);
 
 //restart
-if shootkey && alpha >= 1
+if _shootkey && alpha >= 1
 {
 	game_restart();
 }
-
-
-
-
-
-
-

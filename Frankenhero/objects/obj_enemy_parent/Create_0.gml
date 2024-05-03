@@ -1,8 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
-maxHp = 100
-hp = maxHp
+max_hp = 100
+hp = max_hp
 destroy = false
 damage = 2
 

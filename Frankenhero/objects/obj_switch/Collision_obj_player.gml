@@ -6,7 +6,7 @@ global.level2_start = false;
 
 global.level2_complete = false;
 
-audio_play_sound(snd_switch_1, 0, 0, 1.0, undefined, 1.0);
+audio_play_sound(snd_switch_1, 0, 0);
 
 instance_create_layer(0, 0, "Transition", obj_transition);
 

@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"sc_computerUI",
+  "%Name":"sc_computer_ui",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"sc_computerUI",
+  "name":"sc_computer_ui",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

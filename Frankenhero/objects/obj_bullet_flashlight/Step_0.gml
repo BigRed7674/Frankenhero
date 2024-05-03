@@ -1,11 +1,11 @@
 // move
-xspd = lengthdir_x( spd, dir )
-yspd = lengthdir_y( spd, dir )
+x_spd = lengthdir_x( spd, dir )
+y_spd = lengthdir_y( spd, dir )
 
 
 
-x += xspd
-y += yspd
+x += x_spd
+y += y_spd
 
 // cleanup
 #region

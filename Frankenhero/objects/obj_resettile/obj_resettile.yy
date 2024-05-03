@@ -2,7 +2,7 @@
   "$GMObject":"",
   "%Name":"obj_resettile",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_player_bedroom","path":"objects/obj_player_bedroom/obj_player_bedroom.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_player_bedroom","path":"objects/obj_player_bedroom/obj_player_bedroom.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_resettile",

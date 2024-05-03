@@ -13,4 +13,4 @@ global.wardrobedoor_frame = 1;
 /// @DnDArgument : "objectid" "obj_enterUI"
 /// @DnDArgument : "layer" ""GUI""
 /// @DnDSaveInfo : "objectid" "obj_enterUI"
-instance_create_layer(240, 240, "GUI", obj_enterUI);
+instance_create_layer(240, 240, "GUI", obj_enter_ui);

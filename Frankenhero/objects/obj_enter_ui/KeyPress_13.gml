@@ -3,9 +3,9 @@ window_set_size(960,540);
 surface_resize(application_surface, 960, 540);
 
 draw_set_colour($FFFFFFFF & $ffffff);
-var l381241D5_0=($FFFFFFFF >> 24);
-draw_set_alpha(l381241D5_0 / $ff);
+var _alpha=($FFFFFFFF >> 24);
+draw_set_alpha(_alpha / $ff);
 
-draw_set_font(PixelFont);
+draw_set_font(fnt_pixel);
 
 instance_destroy();

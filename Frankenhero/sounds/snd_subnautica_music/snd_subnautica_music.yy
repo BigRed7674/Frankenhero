@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"subnautica_music",
+  "%Name":"snd_subnautica_music",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":130.22037,
-  "name":"subnautica_music",
+  "name":"snd_subnautica_music",
   "parent":{
     "name":"Music",
     "path":"folders/Sounds/Music.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"subnautica_music.mp3",
+  "soundFile":"snd_subnautica_music.mp3",
   "type":0,
   "volume":0.1,
 }
