@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_ally",
-    "path":"sprites/spr_bullet_ally/spr_bullet_ally.yy",
+    "name":"spr_bullet_ally_heart",
+    "path":"sprites/spr_bullet_ally_heart/spr_bullet_ally_heart.yy",
   },
   "spriteMaskId":null,
   "visible":true,
