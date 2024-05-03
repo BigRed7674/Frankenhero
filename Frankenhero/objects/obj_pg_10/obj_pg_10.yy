@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pg_9",
+  "%Name":"obj_pg_10",
   "eventList":[],
   "managed":true,
-  "name":"obj_pg_9",
+  "name":"obj_pg_10",
   "overriddenProperties":[],
   "parent":{
     "name":"Playground_Object",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pg_7",
-    "path":"sprites/spr_pg_7/spr_pg_7.yy",
+    "name":"spr_pg_14",
+    "path":"sprites/spr_pg_14/spr_pg_14.yy",
   },
   "spriteMaskId":null,
   "visible":true,

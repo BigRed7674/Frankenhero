@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_rock03",
   "bboxMode":2,
-  "bbox_bottom":61,
+  "bbox_bottom":64,
   "bbox_left":25,
   "bbox_right":61,
   "bbox_top":52,
