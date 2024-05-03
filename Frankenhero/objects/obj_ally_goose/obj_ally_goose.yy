@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_ally_goose",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_ally_goose",
   "overriddenProperties":[],
@@ -34,9 +37,6 @@
     "name":"spr_ally_goose_move",
     "path":"sprites/spr_ally_goose_move/spr_ally_goose_move.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_enemy_goose_move",
-    "path":"sprites/spr_enemy_goose_move/spr_enemy_goose_move.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

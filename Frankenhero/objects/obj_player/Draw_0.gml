@@ -24,7 +24,17 @@ if variable_global_exists("level1_complete")
 		//Draw the Ally Sheep
 		if !instance_exists( player_ally[0] )
 		{
-			player_ally[0] = instance_create_depth( x - 100 , y , depth + 1 , obj_ally_sheep)
+			player_ally[0] = instance_create_depth( x - 50 , y , depth + 1 , obj_ally_sheep)
+		}
+
+	}
+	if global.level2_complete
+	|| room_get_name(room) == "rm_test"
+	{
+		//Draw the Ally Sheep
+		if !instance_exists( player_ally[1] )
+		{
+			player_ally[1] = instance_create_depth( x - 100 , y , depth + 2 , obj_ally_goose)
 		}
 
 	}

@@ -25,7 +25,7 @@ player_sprite[2] = spr_player_left; // 180 on XY Plane
 player_sprite[3] = spr_player_down; // 270 on XY Plane
 
 // weapon info
-shoot_timer = 0
+//shoot_timer = 0
 
 // add weapons to player weapon inventory
 array_push( global.player_weapon_inventory , global.weapon_list.flashlight )
@@ -39,6 +39,7 @@ weapon = global.player_weapon_inventory[selected_weapon]
 
 // sidekick
 player_ally[0] = noone // going to be sheep
+player_ally[1] = noone // going to be goose
 
 // drawing
 dark_mist = noone

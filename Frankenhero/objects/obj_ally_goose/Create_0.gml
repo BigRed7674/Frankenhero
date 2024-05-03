@@ -4,7 +4,12 @@
 // Inherit the parent event
 event_inherited();
 
-attack_spd = 10
+attack_spd = 4
+
 
 // drawing
-scale = 0.6
+scale = 0.7
+
+// state machine
+follow_distance = 50
+shoot_time = 10

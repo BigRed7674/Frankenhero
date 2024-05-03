@@ -8,8 +8,8 @@
   "name":"obj_friendly_goose",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game Control",
-    "path":"folders/Objects/Game Control.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Enemies.yy",
   },
   "parentObjectId":{
     "name":"obj_ally_enemy_parent",

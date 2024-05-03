@@ -33,13 +33,20 @@ bbox_bottom < -_pad || bbox_top > room_height + _pad
 	destroy = true
 }
 //player collision
-if hit_confirm == true && player_destroy == true { destroy = true; };
+if hit_confirm == true { destroy = true; };
 //actually destroy self
 if destroy = true { instance_destroy() }
 // wall collision
 if place_meeting( x , y , obj_wall_solid ) { destroy = true }
-// ally collision
-if place_meeting( x , y , obj_ally_parent ) { destroy = true }
-if place_meeting( x , y , obj_bullet_ally ) { destroy = true }
-// player collision
-if place_meeting( x , y , obj_player ) && player_destroy = true { destroy = true }
+// enemy collision
+if place_meeting( x , y , obj_enemy_parent )
+{
+	destroy = true
+	var _enemy = instance_place( x , y , obj_enemy_parent )
+	_enemy.dir = dir
+	_enemy.spd = spd
+	_enemy.attack_timer = 0
+	_enemy.state = "recover"
+
+}
+if place_meeting( x , y , obj_damage_player ) { destroy = true }

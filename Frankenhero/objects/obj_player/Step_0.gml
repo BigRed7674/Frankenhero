@@ -7,7 +7,8 @@ var _shoot_key = global.shootkey;
 
 
 // for ability testing, comment _swap_key_pressed for submission
-var _swap_key_pressed = mouse_check_button_pressed( mb_right )
+//var _swap_key_pressed = mouse_check_button_pressed( mb_right )
+var _shoot_key_second = mouse_check_button( mb_right )
 
 
 //player movement
@@ -75,7 +76,7 @@ var _swap_key_pressed = mouse_check_button_pressed( mb_right )
 	
 #endregion
 
-// weapon swapping
+/* weapon swapping
 #region
 var _player_weapon_inventory = global.player_weapon_inventory
 // cycle through weapons
@@ -87,20 +88,20 @@ if _swap_key_pressed
 	// set the new weapon
 	weapon = _player_weapon_inventory[selected_weapon]
 }
-#endregion
+#endregion*/
 
 // shoot the weapon
 #region
-if shoot_timer > 0 { shoot_timer -- }
+//if shoot_timer > 0 { shoot_timer -- }
 
-if (_shoot_key && shoot_timer <= 0)
+if (_shoot_key)
 {
 	// flashlight bullet
 	if room_get_name(room) == "rm_sheep"
 	
 	{
 		// reset the timer
-		shoot_timer = weapon.cooldown
+		//shoot_timer = weapon.cooldown
 	
 		// create the bullet
 		var _x_offset = lengthdir_x( weapon.length + weapon.offset_distance, aim_dir )
@@ -127,7 +128,7 @@ if (_shoot_key && shoot_timer <= 0)
 	if room_get_name(room) == "rm_credits" || room_get_name(room) == "rm_geese"
 	{
 		// reset the timer
-		shoot_timer = 1
+		//shoot_timer = 1
 	
 		if instance_exists(player_ally[0])
 		{
@@ -140,6 +141,22 @@ if (_shoot_key && shoot_timer <= 0)
 			}
 		}
 
+	}
+}
+if _shoot_key_second
+{
+	if room_get_name(room) == "rm_credits"
+	{
+		if instance_exists(player_ally[1])
+		{
+			if ( player_ally[1].state = "following" )
+			{
+				player_ally[1].state = "attacking"
+				player_ally[1].move_x = mouse_x
+				player_ally[1].move_y = mouse_y
+				player_ally[1].dir = aim_dir
+			}
+		}
 	}
 }
 #endregion
