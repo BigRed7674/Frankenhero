@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Environment",
-    "path":"folders/Objects/Enemies/Environment.yy",
+    "path":"folders/Objects/Environment.yy",
   },
   "parentObjectId":{
     "name":"obj_wall_solid",

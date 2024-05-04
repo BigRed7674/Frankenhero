@@ -7,7 +7,7 @@
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"Cave","order":6,"path":"folders/Objects/Cave.yy",},
     {"name":"Enemies","order":1,"path":"folders/Objects/Enemies.yy",},
-    {"name":"Environment","order":6,"path":"folders/Objects/Enemies/Environment.yy",},
+    {"name":"Environment","order":7,"path":"folders/Objects/Environment.yy",},
     {"name":"Game Control","order":2,"path":"folders/Objects/Game Control.yy",},
     {"name":"Lobby_Object","order":4,"path":"folders/Objects/Lobby_Object.yy",},
     {"name":"Playground_Object","order":5,"path":"folders/Objects/Playground_Object.yy",},
